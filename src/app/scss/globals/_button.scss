@@ -1,0 +1,98 @@
+@use '../util' as u;
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: u.rem(15);
+  text-transform: uppercase;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: u.rem(14); // top+bottom 14px
+  border-radius: u.rem(24);
+  height: u.rem(40);
+  width: u.rem(150);
+
+  @include u.breakpoint('medium') {
+    height: u.rem(45);
+    width: u.rem(165);
+    font-size: u.rem(20);
+  }
+
+  transition-property: background-color, border, color; //smooth transition on hover
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+
+  &.primary {
+    background-color: var(--primary-button-bg);
+    color: var(--text-color-dark);
+
+    &:hover {
+      background-color: var(--primary-button-bg-hover);
+    }
+  }
+
+  &.social {
+    background-color: var(--primary-button-bg);
+    color: var(--text-color-dark);
+    font-family: u.$font;
+
+    &:hover {
+      background-color: var(--primary-button-bg-hover);
+    }
+  }
+
+  &.cta {
+    background-color: var(--cta-button-bg);
+    color: var(--text-color-dark);
+    font-family: u.$font;
+
+    border: 2px solid var(--text-color-dark);
+
+    &:hover {
+      background-color: var(--cta-button-bg-hover);
+    }
+  }
+
+  &.secondary {
+    padding: u.rem(12);
+    background-color: hsla(49, 11%, 30%, 0.2);
+    backdrop-filter: blur(5px);
+    border: 2px solid var(--secondary-button-border);
+    color: var(--secondary-button-text-color);
+
+    &:hover {
+      background-color: var(--secondary-button-bg-hover);
+      border: 2px solid var(--secondary-button-border-hover);
+      color: var(--secondary-button-text-color-hover);
+    }
+  }
+}
+
+.tealButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: u.rem(15);
+  font-family: u.$font;
+  text-transform: uppercase;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: u.rem(14); // top+bottom 14px
+  border-radius: u.rem(24);
+  height: u.rem(40);
+  width: u.rem(150);
+  background-color: var(--primary-button-bg);
+  color: var(--text-color-dark);
+  transition-property: background-color, border, color; //smooth transition on hover
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+
+  &:hover {
+    background-color: var(--primary-button-bg-hover);
+  }
+}

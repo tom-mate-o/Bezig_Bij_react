@@ -1,0 +1,51 @@
+:root {
+  --main-bg: hsl(210, 9%, 96%);
+
+  --navbar-color-bg: hsl(225, 40%, 18%);
+  --dark-color-opacity: rgba(0, 0, 0, 0.65);
+  --text-color-light: hsl(210, 9%, 96%);
+  --text-color-dark: hsl(233, 14%, 25%);
+  --mobilemenu-bg: hsl(225, 40%, 18%);
+  --dark-bg: hsl(225, 40%, 18%);
+
+  --content-text-color-light: hsl(0, 0%, 100%);
+  --content-text-color-dark: hsl(233, 14%, 25%);
+  --content-image-headline-color: hsl(0, 0%, 100%);
+
+  --primary-button-bg: hsl(180, 100%, 42%);
+  --primary-button-bg-hover: hsl(180, 100%, 35%);
+  --cta-button-bg: hsl(210, 9%, 96%);
+  --cta-button-bg-hover: hsl(0, 0%, 80%);
+  --secondary-button-bg: transparent;
+  --secondary-button-bg-hover: hsl(210, 9%, 96%);
+  --secondary-button-border: hsl(210, 9%, 96%);
+  --secondary-button-border-hover: hsl(210, 9%, 96%);
+  --secondary-button-text-color: hsl(210, 9%, 96%);
+  --secondary-button-text-color-hover: hsl(233, 14%, 25%);
+  --topnav-link-hover: #00b3b3;
+
+  --link-color: hsl(180, 100%, 42%);
+  --link-color-hover: hsl(180, 100%, 35%);
+
+  --highlight-bg: #3a506b;
+  --quote-bg: #0b132b;
+  --card-bg: #00b3b3;
+  --testimonial-bg: #3a506b;
+  --socialcontainer-bg: #0b132b;
+  --cta-bg: #00d3d4;
+  --sp-bg: #a9b2be;
+
+  --dark-color-mobile-gallery-opacity: rgba(0, 0, 0, 0.4);
+
+  --all-color: hsl(0, 0%, 50%);
+  --react-color: hsl(207, 46%, 63%);
+  --mongo-db-color: hsl(120, 56%, 22%);
+  --express-color: hsl(0, 0%, 0%);
+  --node-color: hsl(123, 100%, 32%);
+  --sass-color: hsl(310, 57%, 59%);
+  --javascript-color: hsl(50, 100%, 33%);
+  --css-color: hsl(228, 78%, 52%);
+  --website-color: hsl(14, 100%, 63%);
+  --web-app-color: hsl(291, 19%, 52%);
+  --api-color: hsl(0, 47%, 40%);
+}

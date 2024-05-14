@@ -1,0 +1,37 @@
+@use '../util/' as u;
+
+.wrapper {
+  width: min(100% - u.rem(48), u.rem(1440));
+  margin-inline: auto; // center the grid
+
+  @include u.breakpoint-down(small) {
+    width: 100%;
+  }
+
+  @include u.breakpoint(medium) {
+    width: min(100% - u.rem(48), u.rem(1440));
+  }
+
+  &__content {
+    width: min(100% - u.rem(48), u.rem(1440));
+    margin-inline: auto;
+    padding-block-start: u.rem(20);
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: u.rem(800); /* Höhe des Footers */
+    box-sizing: border-box;
+
+    @include u.breakpoint-down(small) {
+      width: 100%;
+      padding-block-start: 0;
+    }
+
+    @include u.breakpoint(medium) {
+      padding-bottom: u.rem(552); /* Höhe des Footers */
+    }
+
+    @include u.breakpoint(large) {
+      padding-bottom: u.rem(267); /* Höhe des Footers */
+    }
+  }
+}

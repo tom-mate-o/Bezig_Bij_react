@@ -1,0 +1,79 @@
+@use '../util/' as u;
+
+.social {
+  &__section {
+    width: 100%;
+    margin-block-start: u.rem(30);
+    margin-block-end: u.rem(30);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__container {
+    background-color: var(--socialcontainer-bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px 0 25px 0;
+    gap: u.rem(15);
+    padding-block: u.rem(15);
+    width: 90%;
+
+    @include u.breakpoint('medium') {
+      flex-direction: row;
+      justify-content: center;
+      padding: u.rem(30);
+      max-width: 60%;
+    }
+
+    @include u.breakpoint('large') {
+      gap: u.rem(50);
+    }
+
+    img {
+      margin: 0;
+      width: u.rem(125);
+    }
+  }
+
+  &__text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: u.rem(15);
+    text-align: center;
+
+    @include u.breakpoint('medium') {
+      max-width: 50%;
+    }
+
+    h3 {
+      color: var(--text-color-light);
+      line-height: 1;
+      margin: 0;
+      font-size: u.rem(30);
+    }
+
+    button {
+      align-self: center;
+      text-transform: uppercase;
+      width: 80%;
+
+      @include u.breakpoint('medium') {
+        width: 100%;
+      }
+
+      span {
+        display: flex;
+        flex-direction: row;
+        gap: u.rem(5);
+        font-size: u.rem(20);
+        padding-inline: u.rem(30);
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+@use '../util/' as u;
+
+.cta {
+  &__section {
+    background-color: var(--cta-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: u.rem(20);
+    text-align: center;
+    padding: u.rem(20);
+
+    @include u.breakpoint('medium') {
+      padding-block: u.rem(60);
+    }
+
+    @include u.breakpoint('large') {
+      padding-block: u.rem(80);
+    }
+
+    h2 {
+      color: var(--text-color-dark);
+      font-size: u.rem(40);
+      font-size: clamp(u.rem(40), 2.32rem + 0.75vw, u.rem(48));
+      line-height: 1;
+      max-width: 800px;
+
+      text-align: center;
+      line-height: 1;
+      margin: 0;
+      max-width: 300px;
+    }
+
+    p {
+      color: var(--text-color-dark);
+      font-size: u.rem(20);
+      font-size: clamp(u.rem(20), 1.16rem + 0.38vw, u.rem(24));
+      line-height: 1;
+      max-width: 600px;
+    }
+
+    button {
+      align-self: center;
+      text-transform: uppercase;
+      width: 80%;
+
+      @include u.breakpoint('medium') {
+        max-width: 300px;
+      }
+
+      span {
+        display: flex;
+        flex-direction: row;
+        gap: u.rem(5);
+        font-size: u.rem(20);
+        padding-inline: u.rem(30);
+      }
+    }
+  }
+}

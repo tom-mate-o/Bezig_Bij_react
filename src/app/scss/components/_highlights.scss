@@ -1,0 +1,100 @@
+@use '../util/' as u;
+
+.highlights {
+  &__section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+
+    gap: u.rem(20);
+    width: 100%;
+    margin-block: u.rem(20);
+
+    @include u.breakpoint(medium) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: u.rem(20);
+    }
+
+    @include u.breakpoint(large) {
+      flex-direction: row;
+      justify-content: space-around;
+      margin-block: u.rem(30);
+    }
+  }
+
+  &__container {
+    background-color: var(--highlight-bg);
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    border-radius: 25px 0 0 25px;
+
+    @include u.breakpoint(medium) {
+      max-width: 45%;
+      height: u.rem(425);
+      text-align: center;
+    }
+
+    @include u.breakpoint(large) {
+      width: 23%;
+      min-height: u.rem(500);
+      text-align: center;
+    }
+
+    img {
+      width: 100%;
+      min-height: u.rem(200);
+      border-radius: 25px 0 0 0;
+      object-fit: cover;
+    }
+  }
+
+  &__textContainer {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    gap: u.rem(15);
+    padding-inline: u.rem(15);
+    padding-block: u.rem(20);
+
+    @include u.breakpoint(medium) {
+      gap: 0;
+    }
+
+    @include u.breakpoint(large) {
+      gap: 0;
+    }
+
+    h3 {
+      color: var(--text-color-light);
+      text-transform: uppercase;
+      line-height: 1;
+      margin: 0;
+      height: auto;
+
+      @include u.breakpoint(large) {
+        min-height: u.rem(45);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    p {
+      color: var(--text-color-light);
+      height: auto;
+    }
+
+    button {
+      align-self: center;
+      height: auto;
+    }
+  }
+}

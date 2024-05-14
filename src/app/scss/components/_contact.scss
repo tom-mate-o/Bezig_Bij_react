@@ -1,0 +1,84 @@
+@use '../util/' as u;
+
+.form-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: u.rem(15);
+  width: 100%;
+}
+
+h3 {
+  margin-block-end: u.rem(15);
+  color: var(--text-color-dark);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: u.rem(15);
+  width: 100%;
+}
+
+.col {
+  flex: 1;
+}
+
+input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--dark-bg);
+  font-family: u.$font;
+
+  &:focus {
+    outline: none;
+    border-color: var(--dark-bg);
+  }
+}
+
+textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--dark-bg);
+  font-family: u.$font;
+
+  &:focus {
+    outline: none;
+    border-color: var(--dark-bg);
+  }
+}
+
+button {
+  padding: 10px;
+  border: none;
+  font-family: 'Inria Serif', serif;
+  align-self: flex-end;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.privacy {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+
+  font-size: 0.8rem;
+  color: var(--text-color-dark);
+
+  input {
+    width: auto;
+    margin-inline-end: u.rem(5);
+  }
+
+  label {
+    width: auto;
+  }
+}

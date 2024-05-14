@@ -1,0 +1,66 @@
+@use '../util/' as u;
+
+.testimonial {
+  &__section {
+    width: 100%;
+    background-color: var(--testimonial-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__user {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: u.rem(10);
+
+    @include u.breakpoint(medium) {
+      flex-direction: row;
+      gap: u.rem(20);
+    }
+
+    p {
+      line-height: 1;
+      font-size: u.rem(15);
+      font-size: clamp(u.rem(15), 0.87rem + 0.29vw, u.rem(18));
+      text-align: center;
+      color: var(--text-color-light);
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: u.rem(20);
+    gap: u.rem(15);
+
+    h3 {
+      line-height: 1.1;
+      font-size: u.rem(25);
+      font-size: clamp(u.rem(25), 1.45rem + 0.47vw, u.rem(30));
+      font-weight: 700;
+      text-align: center;
+      color: var(--text-color-light);
+    }
+
+    img {
+      width: u.rem(80);
+      width: clamp(u.rem(80), 4.56rem + 1.88vw, u.rem(100));
+      margin: 0;
+    }
+
+    @include u.breakpoint(medium) {
+      align-items: flex-start;
+      max-width: 80%;
+      padding-block: u.rem(50);
+
+      h3,
+      p {
+        text-align: left;
+      }
+    }
+  }
+}

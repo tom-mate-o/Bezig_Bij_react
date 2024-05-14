@@ -1,0 +1,40 @@
+@use '../util/' as u;
+
+.info {
+  &__section {
+  }
+
+  &__container {
+    margin-bottom: 40px;
+  }
+
+  &__card {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+    border-radius: 25px 0px 25px 0px;
+    background-color: var(--card-bg);
+
+    img {
+      width: u.rem(100);
+      height: auto;
+      object-fit: cover;
+    }
+
+    h3 {
+      line-height: 1;
+      text-transform: uppercase;
+      font-size: u.rem(15);
+      font-size: clamp(u.rem(15), 0.83rem + 0.47vw, u.rem(20));
+      color: var(--text-color-light);
+    }
+
+    @include u.breakpoint(medium) {
+      height: 200px;
+    }
+  }
+}
