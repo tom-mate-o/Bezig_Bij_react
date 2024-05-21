@@ -1,7 +1,7 @@
 import React from 'react';
 import { useEffect } from 'react';
 
-export default function Coaching() {
+export default function Workshops() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -10,7 +10,7 @@ export default function Coaching() {
     <div>
       <div className="singlepage__contentContainer">
         <div className="singlepage__dividerHeadline">
-          <h2>Personal Coaching</h2>
+          <h2>Workshops</h2>
         </div>
         <p>coming soon</p>
       </div>

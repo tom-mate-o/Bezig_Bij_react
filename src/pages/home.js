@@ -1,5 +1,5 @@
 import React from 'react';
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import { Icon } from 'leaflet';
@@ -7,14 +7,11 @@ import 'leaflet/dist/leaflet.css';
 import Agenda from '../components/Agenda.jsx';
 
 import PauseOnHover from '../components/PauseOnHover';
-import xdreamfitavatar from '../img/xdreamfit_avatar.jpg';
+
 import bezig1 from '../img/bezig1.jpg';
 import bezig2 from '../img/bezig2.jpg';
 import bezig3 from '../img/bezig3.jpg';
-import yingyang from '../img/yingyang.png';
-import quote from '../img/quote.png';
-import quoteimage from '../img/quoteimage.jpg';
-import user from '../img/user.png';
+
 import dianaandarno from '../img/dianaandarno.jpg';
 import mninsta from '../img/mninsta.png';
 import { BsFacebook } from 'react-icons/bs';
@@ -232,7 +229,7 @@ export default function Home() {
               even
             </p>
             <button className="button cta">
-              <Link to="kontakt">Maak een afspraak</Link>
+              <Link to="contact">Maak een afspraak</Link>
             </button>
           </div>
         </div>

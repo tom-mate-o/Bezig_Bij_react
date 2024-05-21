@@ -1,6 +1,7 @@
 import React from 'react';
 import { useEffect } from 'react';
 import Agenda from '../components/Agenda.jsx';
+import { Link } from 'react-router-dom';
 
 export default function AgendaPage() {
   useEffect(() => {
@@ -21,7 +22,9 @@ export default function AgendaPage() {
             Wil je je inschrijven voor een van de evenementen? Stuur ons een
             bericht via het contactformulier of Whatsapp of bel ons gewoon even
           </p>
-          <button className="button cta">Maak een afspraak</button>
+          <button className="button cta">
+            <Link to="/contact">Maak een afspraak</Link>
+          </button>
         </div>
       </div>
     </div>

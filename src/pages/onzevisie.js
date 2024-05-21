@@ -1,7 +1,7 @@
 import React from 'react';
 import { useEffect } from 'react';
 
-export default function Sekundaerpraevention() {
+export default function OnzeVisie() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -10,7 +10,7 @@ export default function Sekundaerpraevention() {
     <div>
       <div className="singlepage__contentContainer">
         <div className="singlepage__dividerHeadline">
-          <h2>Sekundärprevention</h2>
+          <h2>Onze Visie</h2>
         </div>
         <p>coming soon</p>
       </div>

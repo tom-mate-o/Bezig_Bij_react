@@ -9,10 +9,10 @@ import { ReactComponent as Hamburger } from './img/bars-solid.svg';
 import { ReactComponent as Close } from './img/x-bars-solid.svg';
 
 import Home from './pages/home';
-import About from './pages/about';
-import Coaching from './pages/coaching';
-import Sekundaerpraevention from './pages/sekundaerpraevention';
-import Wohlbefinden from './pages/wohlbefinden';
+import OverOns from './pages/overons';
+import OnzeVisie from './pages/onzevisie';
+import Workshops from './pages/workshops';
+import Retraite from './pages/retraite';
 import Apnoetauchen from './pages/apnoetauchen';
 import Preise from './pages/preise';
 import Contact from './pages/contact';
@@ -76,22 +76,22 @@ export default function App() {
                   </Link>
                 </li>
                 <li className="topnav__item">
-                  <Link to="/about" className="topnav__link">
+                  <Link to="/overons" className="topnav__link">
                     overn ons
                   </Link>
                 </li>
                 <li className="topnav__item">
-                  <Link to="/coaching" className="topnav__link">
+                  <Link to="/onzevisie" className="topnav__link">
                     onze visie
                   </Link>
                 </li>
                 <li className="topnav__item">
-                  <Link to="/sekundaerpraevention" className="topnav__link">
+                  <Link to="/workshops" className="topnav__link">
                     workshops
                   </Link>
                 </li>
                 <li className="topnav__item">
-                  <Link to="/wohlbefinden" className="topnav__link">
+                  <Link to="/retraite" className="topnav__link">
                     retraite
                   </Link>
                 </li>
@@ -103,8 +103,8 @@ export default function App() {
                 </li>
 
                 <li className="topnav__item">
-                  <Link to="/kontakt" className="topnav__link">
-                    Kontakt
+                  <Link to="/contact" className="topnav__link">
+                    contact
                   </Link>
                 </li>
               </ul>
@@ -127,44 +127,36 @@ export default function App() {
                 </Link>
               </li>
               <li className="mobilenav__item" onClick={handleCloseClick}>
-                <Link to="/about" className="mobilenav__link">
-                  About Me
+                <Link to="/overons" className="mobilenav__link">
+                  overn ons
                 </Link>
               </li>
               <li className="mobilenav__item" onClick={handleCloseClick}>
-                <Link to="/coaching" className="mobilenav__link">
-                  Coaching
+                <Link to="/onzevisie" className="mobilenav__link">
+                  onze visie
                 </Link>
               </li>
               <li className="mobilenav__item" onClick={handleCloseClick}>
-                <Link to="/sekundaerpraevention" className="mobilenav__link">
-                  Sekundär
-                  <br />
-                  Prävention
-                </Link>
-              </li>
-
-              <li className="mobilenav__item" onClick={handleCloseClick}>
-                <Link to="/wohlbefinden" className="mobilenav__link">
-                  Wohlbefinden
+                <Link to="/workshops" className="mobilenav__link">
+                  workshops
                 </Link>
               </li>
 
               <li className="mobilenav__item" onClick={handleCloseClick}>
-                <Link to="/apnoetauchen" className="mobilenav__link">
-                  Apnoe
-                  <br />
-                  Tauchen
+                <Link to="/retraite" className="mobilenav__link">
+                  Retraite
                 </Link>
               </li>
+
               <li className="mobilenav__item" onClick={handleCloseClick}>
-                <Link to="/preise" className="mobilenav__link">
-                  Preise
+                <Link to="/agenda" className="mobilenav__link">
+                  agenda
                 </Link>
               </li>
+
               <li className="mobilenav__item" onClick={handleCloseClick}>
-                <Link to="/kontakt" className="mobilenav__link">
-                  Kontakt
+                <Link to="/contact" className="mobilenav__link">
+                  contact
                 </Link>
               </li>
             </ul>
@@ -174,16 +166,13 @@ export default function App() {
       <div className="wrapper__content">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/coaching" element={<Coaching />} />
-          <Route
-            path="/sekundaerpraevention"
-            element={<Sekundaerpraevention />}
-          />
-          <Route path="/wohlbefinden" element={<Wohlbefinden />} />
+          <Route path="/overons" element={<OverOns />} />
+          <Route path="/onzevisie" element={<OnzeVisie />} />
+          <Route path="/workshops" element={<Workshops />} />
+          <Route path="/retraite" element={<Retraite />} />
           <Route path="/apnoetauchen" element={<Apnoetauchen />} />
           <Route path="/preise" element={<Preise />} />
-          <Route path="/kontakt" element={<Contact />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="/impressum" element={<Impressum />} />
           <Route path="/agenda" element={<AgendaPage />} />
           <Route path="/privacydisclaimer" element={<Privacydisclaimer />} />
