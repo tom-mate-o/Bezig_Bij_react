@@ -14,9 +14,9 @@ export default function Agenda() {
       initialView: 'listWeek',
       locale: nlLocale,
       contentHeight: 'auto',
-      themeSystem: 'bootstrap5',
+
       events: {
-        url: 'https://corsproxy.io/?https://calendar.google.com/calendar/ical/magicnonsense.agenda%40gmail.com/public/basic.ics',
+        url: 'https://thingproxy.freeboard.io/fetch/https://calendar.google.com/calendar/ical/magicnonsense.agenda%40gmail.com/public/basic.ics',
         format: 'ics',
       },
     });
