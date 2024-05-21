@@ -18,7 +18,7 @@
     padding-block-start: u.rem(20);
     min-height: 100vh;
     position: relative;
-    padding-bottom: u.rem(800); /* Höhe des Footers */
+    padding-bottom: u.rem(832); /* Höhe des Footers */
     box-sizing: border-box;
 
     @include u.breakpoint-down(small) {
@@ -27,11 +27,11 @@
     }
 
     @include u.breakpoint(medium) {
-      padding-bottom: u.rem(552); /* Höhe des Footers */
+      padding-bottom: u.rem(590); /* Höhe des Footers */
     }
 
     @include u.breakpoint(large) {
-      padding-bottom: u.rem(267); /* Höhe des Footers */
+      padding-bottom: u.rem(272); /* Höhe des Footers */
     }
   }
 }

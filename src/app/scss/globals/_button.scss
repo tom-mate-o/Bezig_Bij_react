@@ -5,6 +5,7 @@
   justify-content: center;
   align-items: center;
   font-size: u.rem(15);
+
   text-transform: uppercase;
   line-height: 1;
   font-weight: 700;
@@ -37,7 +38,6 @@
   &.social {
     background-color: var(--primary-button-bg);
     color: var(--text-color-dark);
-    font-family: u.$font;
 
     &:hover {
       background-color: var(--primary-button-bg-hover);
@@ -47,8 +47,8 @@
   &.cta {
     background-color: var(--cta-button-bg);
     color: var(--text-color-dark);
-    font-family: u.$font;
 
+    font-family: u.$pfont;
     border: 2px solid var(--text-color-dark);
 
     &:hover {
@@ -76,7 +76,7 @@
   justify-content: center;
   align-items: center;
   font-size: u.rem(15);
-  font-family: u.$font;
+  font-family: u.$pfont;
   text-transform: uppercase;
   line-height: 1;
   font-weight: 700;

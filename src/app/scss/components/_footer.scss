@@ -8,7 +8,7 @@
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: u.rem(800);
+  height: u.rem(832);
   padding-inline: u.rem(20);
   padding-block-start: u.rem(20);
   color: var(--content-text-color-light);
@@ -22,7 +22,7 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto;
     padding-block-end: u.rem(20);
-    height: u.rem(552);
+    height: u.rem(590);
   }
 
   @include u.breakpoint('large') {
@@ -30,7 +30,7 @@
     grid-template-rows: auto;
     gap: u.rem(20);
     padding-block-end: u.rem(20);
-    height: u.rem(267);
+    height: u.rem(272);
   }
 
   h3 {
@@ -54,10 +54,11 @@
     font-size: u.rem(14);
     font-size: clamp(u.rem(14), 0.83rem + 0.19vw, u.rem(16));
     padding-bottom: 5px;
+    font-family: u.$pfont;
   }
 
   .li:hover {
-    color: var(--text-color-light);
+    color: var(--link-color-hover);
   }
 
   &__socialicon {
@@ -248,5 +249,9 @@
       grid-column: 1/2;
       grid-row: 1/2;
     }
+  }
+
+  p {
+    font-family: u.$pfont;
   }
 }

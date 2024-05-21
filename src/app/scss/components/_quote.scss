@@ -23,7 +23,7 @@
     text-align: center;
 
     h2 {
-      color: var(--text-color-light);
+      color: var(--text-color-dark);
       font-size: u.rem(40);
       font-size: clamp(u.rem(40), 2.32rem + 0.75vw, u.rem(48));
       line-height: 1;
@@ -31,7 +31,7 @@
     }
 
     p {
-      color: var(--text-color-light);
+      color: var(--text-color-dark);
       font-size: u.rem(20);
       font-size: clamp(u.rem(20), 1.16rem + 0.38vw, u.rem(24));
       line-height: 1;
@@ -47,7 +47,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 25px 0 25px 0;
+
     width: 100%;
 
     img {

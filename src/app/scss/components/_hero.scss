@@ -12,15 +12,23 @@
     grid-template-columns: auto auto;
     grid-template-rows: auto auto auto;
     padding: u.rem(20);
+    background-image: linear-gradient(
+        to bottom,
+        rgba(105, 105, 105, 0.568),
+        transparent
+      ),
+      url('../img/hero_bg.jpg');
 
     @include u.breakpoint('medium') {
       grid-template-columns: 2fr 1fr;
       grid-template-rows: auto auto;
       margin-block-end: u.rem(20);
+      // background-image: url('../img/hero_bg.jpg');
     }
 
     @include u.breakpoint('large') {
       padding: u.rem(50);
+      background-image: url('../img/hero_bg.jpg');
     }
   }
   &__title {

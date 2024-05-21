@@ -112,7 +112,7 @@ export default function Contact() {
 
               <div className="form-group">
                 <textarea
-                  placeholder="Your Message"
+                  placeholder="Bericht"
                   className="form-control"
                   name="message"
                   rows="10"

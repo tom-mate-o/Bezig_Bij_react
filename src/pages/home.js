@@ -64,10 +64,10 @@ export default function Home() {
               en communicatie.
             </p>
             <div className="hero__buttons">
-              <Link to="/about" className="hero__button button primary">
+              <Link to="/overons" className="hero__button button primary">
                 over ons
               </Link>
-              <Link to="/kontakt" className="hero__button button secondary">
+              <Link to="/contact" className="hero__button button secondary">
                 contact
               </Link>
             </div>
@@ -91,7 +91,7 @@ export default function Home() {
                 innerlijke balans.
               </p>
               <button className="highlights__button tealButton">
-                <Link to="/coaching">...mehr!</Link>
+                <Link to="/coaching">...meer!</Link>
               </button>
             </div>
           </div>
@@ -110,7 +110,7 @@ export default function Home() {
                 non-verbale communicatie en onze innerlijke balans.
               </p>
               <button className="highlights__button tealButton">
-                <Link to="/sekundaerpraevention">...mehr!</Link>
+                <Link to="/sekundaerpraevention">...meer!</Link>
               </button>
             </div>
           </div>
@@ -131,7 +131,7 @@ export default function Home() {
                 gevoel en sociale verbinding te versterken.
               </p>
               <button className="highlights__button tealButton">
-                <Link to="/wohlbefinden">...mehr!</Link>
+                <Link to="/wohlbefinden">...meer!</Link>
               </button>
             </div>
           </div>

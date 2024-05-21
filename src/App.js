@@ -20,7 +20,7 @@ import Impressum from './pages/impressum';
 import AgendaPage from './pages/agendapage';
 import Privacydisclaimer from './pages/privacydisclaimer';
 
-import { BsThreads } from 'react-icons/bs';
+import { BsFacebook } from 'react-icons/bs';
 import { BsInstagram } from 'react-icons/bs';
 
 import { ReactComponent as Extern } from './img/square-arrow-up-right-solid.svg';
@@ -58,7 +58,7 @@ export default function App() {
             </Link>
           </div>
           <div className="topnav__rightcolumn">
-            <h1 className="topnav__title visually-hidden">X-DREAM-FIT</h1>
+            <h1 className="topnav__title visually-hidden">Magic & Nonsense</h1>
             <nav>
               <ul className="topnav__links">
                 <Hamburger
@@ -182,49 +182,49 @@ export default function App() {
             <h3>Sitemap</h3>
             <ul>
               <li>
-                <Link to="/about" className="footer__link">
-                  Über mich
+                <Link to="/" className="footer__link">
+                  home
                 </Link>
               </li>
               <li>
-                <Link to="/coaching" className="footer__link">
-                  Coaching
+                <Link to="/overons" className="footer__link">
+                  overn ons
                 </Link>
               </li>
               <li>
-                <Link to="/sekundaerpraevention" className="footer__link">
-                  Sekundär Prävention
+                <Link to="/onzevisie" className="footer__link">
+                  onze visie
                 </Link>
               </li>
               <li>
-                <Link to="/wohlbefinden" className="footer__link">
-                  Wohlbefinden
+                <Link to="/workshops" className="footer__link">
+                  workshops
                 </Link>
               </li>
               <li>
-                <Link to="/apnoetauchen" className="footer__link">
-                  Apnoe Tauchen
+                <Link to="/retraite" className="footer__link">
+                  retraite
                 </Link>
               </li>
               <li>
-                <Link to="/preise" className="footer__link">
-                  Preise
+                <Link to="/agenda" className="footer__link">
+                  agenda
                 </Link>
               </li>
               <li>
-                <Link to="/kontakt" className="footer__link">
-                  Kontakt
+                <Link to="/contact" className="footer__link">
+                  contact
                 </Link>
               </li>
             </ul>
           </div>
 
           <div className="footer__collumn2">
-            <h3>Follow me</h3>
+            <h3>Follow Us</h3>
             <ul>
               <li>
                 <a
-                  href="https://www.instagram.com/x_dreamfit/"
+                  href="https://www.instagram.com/magic_nonsense/"
                   target="_blank"
                   className="footer__link"
                 >
@@ -235,12 +235,12 @@ export default function App() {
               </li>
               <li>
                 <a
-                  href="https://www.threads.net/@x_dreamfit"
+                  href="https://www.facebook.com/people/Magic-Nonsense/100090949099793/"
                   target="_blank"
                   className="footer__link"
                 >
-                  <BsThreads className="footer__socialicon" />
-                  Threads
+                  <BsFacebook className="footer__socialicon" />
+                  Facebook
                   <Extern className="footer__externicon" />
                 </a>
               </li>
@@ -248,18 +248,22 @@ export default function App() {
           </div>
 
           <div className="footer__collumn3">
-            <h3>Kontakt</h3>
+            <h3>Contact</h3>
 
             <div>
-              <p>Susanne Roth</p>
-              <p>Margarethe-Schütte-Lihotzky Siedlung 61</p>
-              <p>8605 Kapfenberg</p>
+              <p>
+                Diana Asmuss
+                <br />& Arno Wildschu
+              </p>
+              <p> Veensteeg 3</p>
+              <p>3972 MH</p>
+              <p>Driebergen, NL</p>
               <br />
             </div>
             <div>
-              <p>+43 (0) 664 243 50 22</p>
-              <a href="mailto:office@xdreamfit.net">
-                <p>office@xdreamfit.net</p>
+              <p>+00 (0) 000 000 00 00</p>
+              <a href="mailto:info@magic-nonsense.nl">
+                <p>info@magic-nonsense.nl</p>
               </a>
             </div>
           </div>
@@ -285,7 +289,7 @@ export default function App() {
               </Link>
               <LogoVertical className="footer__logo vertical" />
               <p className="footer__collumn5__copyright">
-                {`©${new Date().getFullYear()}`} Bezig Bij
+                {`©${new Date().getFullYear()}`} Magic & Nonsense
               </p>
               <p className="footer__collumn5__tom">
                 Icons by{' '}

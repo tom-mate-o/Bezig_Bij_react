@@ -133,7 +133,7 @@ a:active {
   --secondary-button-text-color-hover: hsl(233, 14%, 25%);
   --topnav-link-hover: #f5a65b;
   --link-color: #f5a65b;
-  --link-color-hover: hsl(180, 100%, 35%);
+  --link-color-hover: #f5a65b;
   --highlight-bg: #6cae75;
   --quote-bg: #c1cc99;
   --card-bg: #f5a65b;
@@ -196,7 +196,6 @@ a:active {
 .button.social {
   background-color: var(--primary-button-bg);
   color: var(--text-color-dark);
-  font-family: "Calistoga", serif;
 }
 .button.social:hover {
   background-color: var(--primary-button-bg-hover);
@@ -204,7 +203,7 @@ a:active {
 .button.cta {
   background-color: var(--cta-button-bg);
   color: var(--text-color-dark);
-  font-family: "Calistoga", serif;
+  font-family: "Source Sans 3", sans-serif;
   border: 2px solid var(--text-color-dark);
 }
 .button.cta:hover {
@@ -228,7 +227,7 @@ a:active {
   justify-content: center;
   align-items: center;
   font-size: 0.9375rem;
-  font-family: "Calistoga", serif;
+  font-family: "Source Sans 3", sans-serif;
   text-transform: uppercase;
   line-height: 1;
   font-weight: 700;
@@ -268,7 +267,7 @@ a:active {
   padding-block-start: 1.25rem;
   min-height: 100vh;
   position: relative;
-  padding-bottom: 50rem; /* Höhe des Footers */
+  padding-bottom: 52rem; /* Höhe des Footers */
   box-sizing: border-box;
 }
 @media (max-width: 43.74875em) {
@@ -279,12 +278,12 @@ a:active {
 }
 @media (min-width: 43.75em) {
   .wrapper__content {
-    padding-bottom: 34.5rem; /* Höhe des Footers */
+    padding-bottom: 36.875rem; /* Höhe des Footers */
   }
 }
 @media (min-width: 56.25em) {
   .wrapper__content {
-    padding-bottom: 16.6875rem; /* Höhe des Footers */
+    padding-bottom: 17rem; /* Höhe des Footers */
   }
 }
 
@@ -426,6 +425,7 @@ a:active {
   grid-template-columns: auto auto;
   grid-template-rows: auto auto auto;
   padding: 1.25rem;
+  background-image: linear-gradient(to bottom, rgba(105, 105, 105, 0.568), transparent), url("../img/hero_bg.jpg");
 }
 @media (min-width: 43.75em) {
   .hero__bg-image {
@@ -437,6 +437,7 @@ a:active {
 @media (min-width: 56.25em) {
   .hero__bg-image {
     padding: 3.125rem;
+    background-image: url("../img/hero_bg.jpg");
   }
 }
 .hero__title {
@@ -593,7 +594,7 @@ a:active {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 50rem;
+  height: 52rem;
   padding-inline: 1.25rem;
   padding-block-start: 1.25rem;
   color: var(--content-text-color-light);
@@ -608,7 +609,7 @@ a:active {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto;
     padding-block-end: 1.25rem;
-    height: 34.5rem;
+    height: 36.875rem;
   }
 }
 @media (min-width: 56.25em) {
@@ -617,7 +618,7 @@ a:active {
     grid-template-rows: auto;
     gap: 1.25rem;
     padding-block-end: 1.25rem;
-    height: 16.6875rem;
+    height: 17rem;
   }
 }
 .footer h3 {
@@ -637,9 +638,10 @@ a:active {
   font-size: 0.875rem;
   font-size: clamp(0.875rem, 0.83rem + 0.19vw, 1rem);
   padding-bottom: 5px;
+  font-family: "Source Sans 3", sans-serif;
 }
 .footer .li:hover {
-  color: var(--text-color-light);
+  color: var(--link-color-hover);
 }
 .footer__socialicon {
   height: 0.875rem;
@@ -818,6 +820,9 @@ a:active {
     grid-column: 1/2;
     grid-row: 1/2;
   }
+}
+.footer p {
+  font-family: "Source Sans 3", sans-serif;
 }
 
 .singlepage__contentContainer {
@@ -1347,14 +1352,14 @@ button:hover {
   text-align: center;
 }
 .quote__container h2 {
-  color: var(--text-color-light);
+  color: var(--text-color-dark);
   font-size: 2.5rem;
   font-size: clamp(2.5rem, 2.32rem + 0.75vw, 3rem);
   line-height: 1;
   max-width: 600px;
 }
 .quote__container p {
-  color: var(--text-color-light);
+  color: var(--text-color-dark);
   font-size: 1.25rem;
   font-size: clamp(1.25rem, 1.16rem + 0.38vw, 1.5rem);
   line-height: 1;
@@ -1368,7 +1373,6 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 25px 0 25px 0;
   width: 100%;
 }
 .quote__picturecontainer img {
@@ -1501,7 +1505,6 @@ button:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: 25px 0 25px 0;
   gap: 0.9375rem;
   padding-block: 0.9375rem;
   width: 90%;
@@ -1541,7 +1544,6 @@ button:hover {
   color: var(--text-color-light);
   line-height: 1;
   margin: 0;
-  font-size: 1.875rem;
 }
 .social__text button {
   align-self: center;
@@ -1559,6 +1561,7 @@ button:hover {
   gap: 0.3125rem;
   font-size: 1.25rem;
   padding-inline: 1.875rem;
+  font-family: "Source Sans 3", sans-serif;
 }
 
 .cta {
