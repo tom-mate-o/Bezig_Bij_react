@@ -16,7 +16,7 @@
     align-items: center;
     text-align: center;
     margin: 20px;
-    border-radius: 25px 0px 25px 0px;
+
     background-color: var(--card-bg);
 
     img {
@@ -30,6 +30,8 @@
       text-transform: uppercase;
       font-size: u.rem(15);
       font-size: clamp(u.rem(15), 0.83rem + 0.47vw, u.rem(20));
+      font-weight: 400;
+      margin: 10px;
       color: var(--text-color-light);
     }
 

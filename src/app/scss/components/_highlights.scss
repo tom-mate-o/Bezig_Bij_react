@@ -27,40 +27,60 @@
   }
 
   &__container {
-    background-color: var(--highlight-bg);
     display: flex;
     flex-direction: column;
+
+    align-items: center;
+
     width: 90%;
-    height: auto;
-    border-radius: 25px 0 0 25px;
+    height: 100%;
 
     @include u.breakpoint(medium) {
       max-width: 45%;
-      height: u.rem(425);
+      height: 100%;
       text-align: center;
     }
 
     @include u.breakpoint(large) {
       width: 23%;
-      min-height: u.rem(500);
+      min-height: auto;
       text-align: center;
+    }
+  }
+
+  &__imageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    width: 100%;
+    height: 225px;
+    padding: 0;
+
+    & .inner {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      height: 50%;
+      width: 100%;
+      background-color: var(--highlight-bg);
     }
 
     img {
-      width: 100%;
-      min-height: u.rem(200);
-      border-radius: 25px 0 0 0;
+      width: 200px;
+      aspect-ratio: 1 / 1.1;
       object-fit: cover;
+      clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     }
   }
 
   &__textContainer {
+    background-color: var(--highlight-bg);
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
-    gap: u.rem(15);
     padding-inline: u.rem(15);
     padding-block: u.rem(20);
 
@@ -74,9 +94,9 @@
 
     h3 {
       color: var(--text-color-light);
-      text-transform: uppercase;
+      font-weight: 400;
       line-height: 1;
-      margin: 0;
+
       height: auto;
 
       @include u.breakpoint(large) {
@@ -89,12 +109,15 @@
 
     p {
       color: var(--text-color-light);
+      font-family: u.$pfont;
       height: auto;
+      margin-block-end: u.rem(15);
     }
 
     button {
       align-self: center;
       height: auto;
+      font-family: u.$pfont;
     }
   }
 }

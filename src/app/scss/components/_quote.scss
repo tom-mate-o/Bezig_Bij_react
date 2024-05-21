@@ -40,7 +40,7 @@
   }
 
   &__picturecontainer {
-    background-image: url(../img/xdreamfit_sea.jpg);
+    background-image: url(../img/quoteimage.jpg);
     background-size: cover;
     background-position: center;
     height: u.rem(300);
@@ -48,6 +48,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 25px 0 25px 0;
+    width: 100%;
 
     img {
       width: 90%;

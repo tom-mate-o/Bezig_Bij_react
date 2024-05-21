@@ -11,6 +11,15 @@ import ice from '../../src/img/ice.png';
 import mindful from '../../src/img/mindful.png';
 import yogamat from '../../src/img/yoga-mat.png';
 
+import boundaries from '../../src/img/boundaries.png';
+import calm from '../../src/img/calm.png';
+import connection from '../../src/img/connection.png';
+import creativety from '../../src/img/creativety.png';
+import emotionalintelligence from '../../src/img/emotional-intelligence.png';
+import empathy from '../../src/img/empathy.png';
+import selfcare from '../../src/img/selfcare.png';
+import reflection from '../../src/img/reflection.png';
+
 export default function PauseOnHover() {
   var settings = {
     dots: true,
@@ -43,73 +52,78 @@ export default function PauseOnHover() {
       <Slider {...settings}>
         <div className="info__slide" id="1">
           <div className="info__card">
-            <img src={fitness} alt="icon"></img>
-            <h3>
-              Personal <br />
-              Fitness <br />
-              Training
-            </h3>
+            <img
+              src={selfcare}
+              alt="icon"
+              style={{ filter: 'sepia(0.6)' }}
+            ></img>
+            <h3>Eigenwaarde</h3>
           </div>
         </div>
         <div className="info__slide" id="2">
           <div className="info__card">
-            <img src={yogamat} alt="icon"></img>
-            <h3>
-              Pilates-
-              <br />
-              Wirbelsäulen- <br />
-              Beckenboden-
-              <br />
-              training
-            </h3>
+            <img
+              src={connection}
+              alt="icon"
+              style={{ filter: 'sepia(0.6)' }}
+            ></img>
+            <h3>Verbinding</h3>
           </div>
         </div>
         <div className="info__slide" id="3">
           <div className="info__card">
-            <img src={air} alt="icon"></img>
-            <h3>Atemtraining</h3>
+            <img
+              src={boundaries}
+              alt="icon"
+              style={{ filter: 'sepia(0.6)' }}
+            ></img>
+            <h3>Grenzen</h3>
           </div>
         </div>
         <div className="info__slide" id="4">
           <div className="info__card">
-            <img src={forest} alt="icon"></img>
-            <h3>Outdoortraining</h3>
+            <img
+              src={empathy}
+              alt="icon"
+              style={{ filter: 'sepia(0.6)' }}
+            ></img>
+            <h3>Empathie</h3>
           </div>
         </div>
         <div className="info__slide" id="5">
           <div className="info__card">
-            <img src={mindful} alt="icon"></img>
-            <h3>
-              Entspannungs- <br />
-              und
-              <br />
-              Achtsamkeitstraining
-            </h3>
+            <img src={calm} alt="icon" style={{ filter: 'sepia(0.6)' }}></img>
+            <h3>Rust</h3>
           </div>
         </div>
         <div className="info__slide" id="6">
           <div className="info__card">
-            <img src={apnoe} alt="icon"></img>
-            <h3>Apnoetauchkurse</h3>
+            <img
+              src={reflection}
+              alt="icon"
+              style={{ filter: 'sepia(0.6)' }}
+            ></img>
+            <h3>Inzicht</h3>
           </div>
         </div>
         <div className="info__slide" id="7">
           <div className="info__card">
-            <img src={ice} alt="icon"></img>
-            <h3>
-              Eisbaden <br />
-              Eisschwimmen <br />
-              Kältetraining
-            </h3>
+            <img
+              src={emotionalintelligence}
+              alt="icon"
+              style={{ filter: 'sepia(0.6)' }}
+            ></img>
+            <h3>Intuïtie</h3>
           </div>
         </div>
         <div className="info__slide" id="8">
           <div className="info__card">
-            <img src={aroma} alt="icon"></img>
-            <h3>
-              Aromatherapie <br />& Energetische <br />
-              Körperanwendungen
-            </h3>
+            <img
+              src={creativety}
+              alt="icon"
+              style={{ filter: 'sepia(0.6)' }}
+            ></img>
+            <h3>Creativiteit</h3>
           </div>
         </div>
       </Slider>

@@ -1,6 +1,6 @@
 @use '../util/' as u;
 
-.testimonial {
+.aboutbox {
   &__section {
     width: 100%;
     background-color: var(--testimonial-bg);
@@ -25,8 +25,13 @@
       font-size: u.rem(15);
       font-size: clamp(u.rem(15), 0.87rem + 0.29vw, u.rem(18));
       text-align: center;
-      color: var(--text-color-light);
+      color: var(--text-color-dark);
     }
+  }
+
+  &__icon {
+    font-size: u.rem(80);
+    color: var(--text-color-dark);
   }
 
   &__container {
@@ -43,13 +48,14 @@
       font-size: clamp(u.rem(25), 1.45rem + 0.47vw, u.rem(30));
       font-weight: 700;
       text-align: center;
-      color: var(--text-color-light);
+      color: var(--text-color-dark);
     }
 
     img {
       width: u.rem(80);
       width: clamp(u.rem(80), 4.56rem + 1.88vw, u.rem(100));
       margin: 0;
+      border: 3px solid var(--text-color-light);
     }
 
     @include u.breakpoint(medium) {

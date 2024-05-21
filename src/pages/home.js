@@ -4,19 +4,22 @@ import { Link } from 'react-router-dom';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import { Icon } from 'leaflet';
 import 'leaflet/dist/leaflet.css';
+import Agenda from '../components/Agenda.jsx';
 
 import PauseOnHover from '../components/PauseOnHover';
 import xdreamfitavatar from '../img/xdreamfit_avatar.jpg';
-import xdreamfit1 from '../img/xdreamfit_1.jpg';
-import xdreamfit2 from '../img/xdreamfit_2.jpg';
-import xdreamfit3 from '../img/xdreamfit_3.jpg';
-import xdreamfit4 from '../img/xdreamfit_4.jpg';
+import bezig1 from '../img/bezig1.jpg';
+import bezig2 from '../img/bezig2.jpg';
+import bezig3 from '../img/bezig3.jpg';
 import yingyang from '../img/yingyang.png';
 import quote from '../img/quote.png';
+import quoteimage from '../img/quoteimage.jpg';
 import user from '../img/user.png';
-import xdreamfitinsta from '../img/xdreaminsta.png';
-import { BsThreads } from 'react-icons/bs';
+import dianaandarno from '../img/dianaandarno.jpg';
+import mninsta from '../img/mninsta.png';
+import { BsFacebook } from 'react-icons/bs';
 import { BsInstagram } from 'react-icons/bs';
+import { BiSolidQuoteAltLeft } from 'react-icons/bi';
 
 export default function Home() {
   useEffect(() => {
@@ -31,7 +34,7 @@ export default function Home() {
     slidesToScroll: 1,
   };
 
-  const position = [47.42950547379685, 15.276460054706659];
+  const position = [52.03823697875865, 5.277477712194901];
 
   function createDefaultIcon() {
     return new Icon({
@@ -49,50 +52,46 @@ export default function Home() {
   }
 
   return (
-    <div className="hero">
+    <div className="hero" id="home">
       <div className="hero__bg-image">
         <h1 className="hero__title">
-          Gemeinsam fit.
-          <br />
-          Fitness & Wohlbefinden
+          Gevoelsreflectie
+          <br />& Mindfulness
         </h1>
         <div className="hero__left">
           <div className="hero__text">
             <p className="hero__content">
-              👋 Hi, ich bin Susi. Tauche mit mir ein in die Welt des
-              ganzheitlichen Wohlbefindens. Gemeinsam erreichen wir deine Ziele
-              während dein Körper und Geist in Einklang kommen.
+              Welkom! Bij ons kun je leren hoe je met behulp van mindfulness een
+              verbinding met jezelf en de natuur kunt vinden. Samen met de
+              paarden bevorderen we verbinding, eigenwaarde, grenzen, empathie
+              en communicatie.
             </p>
             <div className="hero__buttons">
               <Link to="/about" className="hero__button button primary">
-                Über mich
+                over ons
               </Link>
               <Link to="/kontakt" className="hero__button button secondary">
-                Kontakt
+                contact
               </Link>
             </div>
           </div>
         </div>
-        <div className="hero__right">
-          <img
-            className={'hero__image'}
-            src={xdreamfitavatar}
-            alt="Tom Kra"
-            width={230}
-            height={315}
-          />
-        </div>
+        <div className="hero__right"></div>
       </div>
       <main>
         <div className="highlights__section wrapper">
           <div className="highlights__container" id="1">
-            <img src={xdreamfit1} alt="Personal Coaching"></img>
+            <div className="highlights__imageContainer">
+              <div className="inner">
+                <img src={bezig1} alt="Personal Coaching"></img>
+              </div>
+            </div>
             <div className="highlights__textContainer">
-              <h3 className="highlights__title">Personal Coaching</h3>
+              <h3 className="highlights__title">meer rust en meer inzicht</h3>
               <p className="highlights__text">
-                Begleite mich auf deiner Reise zu persönlichem Wachstum und
-                Entfaltung. Gemeinsam schaffen wir die Grundlage für deine beste
-                Version.
+                Ontdek meer rust en inzicht door te leren van de oordeelvrije
+                paarden, die ons leren over non-verbale communicatie en onze
+                innerlijke balans.
               </p>
               <button className="highlights__button tealButton">
                 <Link to="/coaching">...mehr!</Link>
@@ -101,13 +100,17 @@ export default function Home() {
           </div>
 
           <div className="highlights__container" id="2">
-            <img src={xdreamfit2} alt="Sekundär-Prävention"></img>
+            <div className="highlights__imageContainer">
+              <div className="inner">
+                <img src={bezig2} alt="Personal Coaching"></img>
+              </div>
+            </div>
             <div className="highlights__textContainer">
-              <h3 className="highlights__title">Sekundär-Prävention</h3>
+              <h3 className="highlights__title">verbinding en communicatie</h3>
               <p className="highlights__text">
-                Gemeinsam verhindern wir potenzielle Probleme. Mit
-                maßgeschneiderter Sekundärprävention fördern wir dein
-                Wohlbefinden langfristig.
+                Ontdek een diepere verbinding en verbeterde communicatie door te
+                leren van de oordeelvrije paarden, die ons leren over
+                non-verbale communicatie en onze innerlijke balans.
               </p>
               <button className="highlights__button tealButton">
                 <Link to="/sekundaerpraevention">...mehr!</Link>
@@ -116,30 +119,22 @@ export default function Home() {
           </div>
 
           <div className="highlights__container" id="3">
-            <img src={xdreamfit3} alt="Wohlbefinden & Entspannung"></img>
+            <div className="highlights__imageContainer">
+              <div className="inner">
+                <img src={bezig3} alt="Personal Coaching"></img>
+              </div>
+            </div>
             <div className="highlights__textContainer">
-              <h3 className="highlights__title">Wohlbefinden</h3>
+              <h3 className="highlights__title">
+                intuïtie en sociale interactie
+              </h3>
               <p className="highlights__text">
-                Fördere dein Wohlbefinden.Finde innere Balance und Entspannung
-                für Körper und Geist durch Körperanwendungen und mehr!
+                Ervaar een versterkte intuïtie en sociale interactie door te
+                leren van de wijsheid van dieren, die ons helpen ons natuurlijke
+                gevoel en sociale verbinding te versterken.
               </p>
               <button className="highlights__button tealButton">
                 <Link to="/wohlbefinden">...mehr!</Link>
-              </button>
-            </div>
-          </div>
-
-          <div className="highlights__container" id="4">
-            <img src={xdreamfit4} alt="Apnoe Tauchen"></img>
-            <div className="highlights__textContainer">
-              <h3 className="highlights__title">Apnoe Tauchen</h3>
-              <p className="highlights__text">
-                Erfahre die Faszination des Apnoe-Tauchens. Tauche ein in eine
-                Welt voller Ruhe und Abenteuer unter Wasser alles mit nur einem
-                einzigen Atemzug.
-              </p>
-              <button className="highlights__button tealButton">
-                <Link to="/apnoetauchen">...mehr!</Link>
               </button>
             </div>
           </div>
@@ -148,14 +143,13 @@ export default function Home() {
         <div className="quote__section">
           <div className="quote__container">
             <h2 className="quote__title">
-              Ein gesunder Geist ruht in einem gesunden Körper.
+              De essentie van mindfulness leer je het beste van een paard,
             </h2>
             <p className="quote__subtitle">
-              ...und gemeinsam schaffen wir die Grundlage für beides.
+              want zij leven altijd in het moment en weerspiegelen onze diepste
+              waarheid.
             </p>
-            <div className="quote__picturecontainer">
-              <img src={yingyang} alt="Wohlbefinden & Entspannung"></img>
-            </div>
+            <div className="quote__picturecontainer"></div>
           </div>
         </div>
 
@@ -165,26 +159,27 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="testimonial__section">
-          <div className="testimonial__container">
-            <img src={quote} alt="icon"></img>
-            <h3 className="testimonial__quote">
-              Das Coaching mit Susi hat mein Leben wirklich verändert. Ich fühle
-              mich nicht nur körperlich stärker, sondern auch mental
-              ausgeglichener. Danke für die inspirierende Reise zu mehr
-              Gesundheit und Lebensfreude!
+        <div className="aboutbox__section">
+          <div className="aboutbox__container">
+            <BiSolidQuoteAltLeft className="aboutbox__icon" />
+            <h3 className="aboutbox__text">
+              Wij leren mensen bewust kijken naar zichzelf en gebruik maken van
+              gevoel, energie en intuïtie. Op ons mooie perceel grond werken we
+              aan permacultuur en de verzorging van al onze dieren. Verder
+              houden we van creatief bezig zijn en verdiepen wij ons graag in de
+              natuur.
             </h3>
-            <div className="testimonial__user">
+            <div className="aboutbox__user">
               <img
                 className={'hero__image'}
-                src={user}
+                src={dianaandarno}
                 alt="testimonial"
                 width={230}
                 height={315}
               />
               <div>
-                <p>Name Surname</p>
-                <p> Poistion</p>
+                <p>Diana Asmuss & Arno Wildschut</p>
+                <p>Magic & Nonsense</p>
               </div>
             </div>
           </div>
@@ -194,16 +189,16 @@ export default function Home() {
           <div className="social__container">
             <img
               className={'hero__image'}
-              src={xdreamfitinsta}
+              src={mninsta}
               alt="testimonial"
               width={230}
               height={315}
             />
             <div className="social__text">
-              <h3>@x_dreamfit</h3>
+              <h3>@magic_nonsense</h3>
               <button className="button social">
                 <Link
-                  to="https://www.instagram.com/x_dreamfit/"
+                  to="https://www.instagram.com/magic_nonsense/"
                   target="_blank"
                 >
                   <span>
@@ -212,9 +207,12 @@ export default function Home() {
                 </Link>
               </button>
               <button className="button social">
-                <Link to="https://www.threads.net/@x_dreamfit" target="_blank">
+                <Link
+                  to="https://www.facebook.com/people/Magic-Nonsense/100090949099793/"
+                  target="_blank"
+                >
                   <span>
-                    <BsThreads /> Threads
+                    <BsFacebook /> Facebook
                   </span>
                 </Link>
               </button>
@@ -222,14 +220,20 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="cta__section">
+        <div className="cta__section" id="agenda">
           <div className="cta__container">
-            <h2>Starte noch heute!</h2>
+            <h2>Agenda</h2>
+            <div className="agenda">
+              <Agenda />
+            </div>
             <p>
-              Worauf wartest du? Beginne noch heute deine Reise zu einem
-              vitaleren Leben und entfalte dein volles Potenzial!
+              Wil je je inschrijven voor een van de evenementen? Stuur ons een
+              bericht via het contactformulier of Whatsapp of bel ons gewoon
+              even
             </p>
-            <button className="button cta">Termin vereinbaren</button>
+            <button className="button cta">
+              <Link to="kontakt">Maak een afspraak</Link>
+            </button>
           </div>
         </div>
 
@@ -244,9 +248,7 @@ export default function Home() {
               url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             />
             <Marker position={position} icon={createDefaultIcon()}>
-              <Popup>
-                A pretty CSS3 popup. <br /> Easily customizable.
-              </Popup>
+              <Popup>Veensteeg 3 3972 MH, Driebergen Nederland</Popup>
             </Marker>
           </MapContainer>
         </div>

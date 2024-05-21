@@ -1,19 +1,19 @@
 :root {
   --main-bg: hsl(210, 9%, 96%);
 
-  --navbar-color-bg: hsl(225, 40%, 18%);
+  --navbar-color-bg: #8b9474;
   --dark-color-opacity: rgba(0, 0, 0, 0.65);
-  --text-color-light: hsl(210, 9%, 96%);
+  --text-color-light: #ffffff;
   --text-color-dark: hsl(233, 14%, 25%);
-  --mobilemenu-bg: hsl(225, 40%, 18%);
-  --dark-bg: hsl(225, 40%, 18%);
+  --mobilemenu-bg: #8b9474;
+  --dark-bg: #8b9474;
 
   --content-text-color-light: hsl(0, 0%, 100%);
   --content-text-color-dark: hsl(233, 14%, 25%);
   --content-image-headline-color: hsl(0, 0%, 100%);
 
-  --primary-button-bg: hsl(180, 100%, 42%);
-  --primary-button-bg-hover: hsl(180, 100%, 35%);
+  --primary-button-bg: #f5a65b;
+  --primary-button-bg-hover: #d89352;
   --cta-button-bg: hsl(210, 9%, 96%);
   --cta-button-bg-hover: hsl(0, 0%, 80%);
   --secondary-button-bg: transparent;
@@ -22,18 +22,25 @@
   --secondary-button-border-hover: hsl(210, 9%, 96%);
   --secondary-button-text-color: hsl(210, 9%, 96%);
   --secondary-button-text-color-hover: hsl(233, 14%, 25%);
-  --topnav-link-hover: #00b3b3;
+  --topnav-link-hover: #f5a65b;
 
-  --link-color: hsl(180, 100%, 42%);
+  --link-color: #f5a65b;
   --link-color-hover: hsl(180, 100%, 35%);
 
-  --highlight-bg: #3a506b;
-  --quote-bg: #0b132b;
-  --card-bg: #00b3b3;
-  --testimonial-bg: #3a506b;
-  --socialcontainer-bg: #0b132b;
-  --cta-bg: #00d3d4;
-  --sp-bg: #a9b2be;
+  --highlight-bg: #6cae75;
+  --quote-bg: #c1cc99;
+  --card-bg: #f5a65b;
+  --testimonial-bg: #8bbd8b;
+  --socialcontainer-bg: #5e644e;
+  --cta-bg: #f5a65b;
+  --sp-bg: #c1cc9994;
+  --dividerheadline-bg: #5e644e;
+  --dividersubheadline-bg: #8b9474;
+
+  --fc-button-bg-color: hsl(210, 9%, 96%);
+  --fc-button-text-color: hsl(233, 14%, 25%);
+  --fc-button-bg-color-hover: hsl(0, 0%, 80%);
+  --fc-border-color: none;
 
   --dark-color-mobile-gallery-opacity: rgba(0, 0, 0, 0.4);
 

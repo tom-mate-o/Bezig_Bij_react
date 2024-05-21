@@ -3,8 +3,8 @@ import './dist/style.css';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import { useState } from 'react';
 
-import { ReactComponent as Logo } from './img/xdreamlogohorizontal.svg';
-import { ReactComponent as LogoVertical } from './img/xdreamlogovertical.svg';
+import { ReactComponent as Logo } from './img/bezigbijlogo.svg';
+import { ReactComponent as LogoVertical } from './img/bezigbijlogvertical.svg';
 import { ReactComponent as Hamburger } from './img/bars-solid.svg';
 import { ReactComponent as Close } from './img/x-bars-solid.svg';
 
@@ -17,6 +17,7 @@ import Apnoetauchen from './pages/apnoetauchen';
 import Preise from './pages/preise';
 import Contact from './pages/contact';
 import Impressum from './pages/impressum';
+import AgendaPage from './pages/agendapage';
 import Privacydisclaimer from './pages/privacydisclaimer';
 
 import { BsThreads } from 'react-icons/bs';
@@ -76,40 +77,31 @@ export default function App() {
                 </li>
                 <li className="topnav__item">
                   <Link to="/about" className="topnav__link">
-                    Über
-                    <br />
-                    mich
+                    overn ons
                   </Link>
                 </li>
                 <li className="topnav__item">
                   <Link to="/coaching" className="topnav__link">
-                    Coaching
+                    onze visie
                   </Link>
                 </li>
                 <li className="topnav__item">
                   <Link to="/sekundaerpraevention" className="topnav__link">
-                    Sekundär
-                    <br />
-                    Prävention
+                    workshops
                   </Link>
                 </li>
                 <li className="topnav__item">
                   <Link to="/wohlbefinden" className="topnav__link">
-                    Wohlbefinden
+                    retraite
                   </Link>
                 </li>
+
                 <li className="topnav__item">
-                  <Link to="/apnoetauchen" className="topnav__link">
-                    Apnoe
-                    <br />
-                    Tauchen
+                  <Link to="/agenda" className="topnav__link">
+                    agenda
                   </Link>
                 </li>
-                <li className="topnav__item">
-                  <Link to="/preise" className="topnav__link">
-                    Preise
-                  </Link>
-                </li>
+
                 <li className="topnav__item">
                   <Link to="/kontakt" className="topnav__link">
                     Kontakt
@@ -193,6 +185,7 @@ export default function App() {
           <Route path="/preise" element={<Preise />} />
           <Route path="/kontakt" element={<Contact />} />
           <Route path="/impressum" element={<Impressum />} />
+          <Route path="/agenda" element={<AgendaPage />} />
           <Route path="/privacydisclaimer" element={<Privacydisclaimer />} />
         </Routes>
         <footer className="footer">
@@ -303,7 +296,7 @@ export default function App() {
               </Link>
               <LogoVertical className="footer__logo vertical" />
               <p className="footer__collumn5__copyright">
-                {`©${new Date().getFullYear()}`} X-DREAM-FIT-COACHING
+                {`©${new Date().getFullYear()}`} Bezig Bij
               </p>
               <p className="footer__collumn5__tom">
                 Icons by{' '}

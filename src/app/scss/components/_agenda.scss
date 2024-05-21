@@ -1,0 +1,46 @@
+@use '../util/' as u;
+
+.agenda {
+  width: 100%;
+  margin-block: u.rem(20);
+
+  .fc-header-toolbar {
+    &.fc-toolbar {
+      display: flex;
+      flex-direction: column;
+      gap: u.rem(5);
+      color: var(--text-color-dark);
+    }
+  }
+
+  .fc-toolbar-chunk {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  td {
+    .fc-list-event-dot {
+      border: calc(var(--fc-list-event-dot-width) / 2) solid var(--highlight-bg);
+    }
+  }
+
+  tbody {
+    .fc-list-day-cushion {
+      background-color: var(--socialcontainer-bg);
+      font-weight: 400;
+    }
+
+    color: var(--text-color-dark);
+  }
+
+  button:hover {
+    background-color: var(--fc-button-bg-color-hover) !important;
+  }
+}
