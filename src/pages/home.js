@@ -17,6 +17,7 @@ import mninsta from '../img/mninsta.png';
 import { BsFacebook, BsWhatsapp } from 'react-icons/bs';
 import { BsInstagram } from 'react-icons/bs';
 import { BiSolidQuoteAltLeft } from 'react-icons/bi';
+import Calendly from '../components/Calendly.jsx';
 
 export default function Home() {
   useEffect(() => {
@@ -221,7 +222,9 @@ export default function Home() {
           <div className="cta__container">
             <h2>Agenda</h2>
             <div className="agenda">
-              <Agenda />
+              {/* <Agenda /> */}
+
+              <Calendly />
             </div>
             <p>
               Wil je je inschrijven voor een van de evenementen? Stuur ons een
