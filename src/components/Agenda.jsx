@@ -3,6 +3,7 @@ import { Calendar } from '@fullcalendar/core';
 import iCalendarPlugin from '@fullcalendar/icalendar';
 import listPlugin from '@fullcalendar/list';
 import nlLocale from '@fullcalendar/core/locales/nl';
+import ICAL from 'ical.js';
 
 export default function Agenda() {
   const calendarRef = useRef();
@@ -17,17 +18,25 @@ export default function Agenda() {
 
       events: function (fetchInfo, successCallback, failureCallback) {
         fetch(
-          'https://magic-nonsense.netlify.app/.netlify/functions/proxy?url=https://calendar.proton.me/api/calendar/v1/url/bi_quJKrAd_Ko9erjojgkCWouAKFnOFcIoUcvA8zF0lCIOB351AWumQPHzy92gOA1uDFxtiGS9aF4TC4WOBvbg==/calendar.ics?CacheKey=IOkIe0kodCaKEGZAmsV6dg%3D%3D&PassphraseKey=tHVkXG3vHn8daSBuUnEdV7ImMGifZ12GIVL-U4egV4%3D',
+          'https://calendar.proton.me/api/calendar/v1/url/bi_quJKrAd_Ko9erjojgkCWouAKFnOFcIoUcvA8zF0lCIOB351AWumQPHzy92gOA1uDFxtiGS9aF4TC4WOBvbg==/calendar.ics?CacheKey=IOkIe0kodCaKEGZAmsV6dg%3D%3D&PassphraseKey=tHVkXG3vHn8daSBuUnEdV7ImMGifZ12GIVL-U4egV4%3D',
           {
             mode: 'no-cors',
           }
         )
           .then((response) => response.text())
-          .then((str) =>
-            new window.DOMParser().parseFromString(str, 'text/xml')
-          )
-          .then((data) => {
-            // Verarbeiten Sie die Daten hier und rufen Sie successCallback mit den Ereignissen auf
+          .then((str) => {
+            const jcalData = ICAL.parse(str);
+            const comp = new ICAL.Component(jcalData);
+            const vevents = comp.getAllSubcomponents('vevent');
+            const events = vevents.map((vevent) => {
+              const event = new ICAL.Event(vevent);
+              return {
+                title: event.summary,
+                start: event.startDate.toString(),
+                end: event.endDate.toString(),
+              };
+            });
+            successCallback(events);
           })
           .catch(failureCallback);
       },
