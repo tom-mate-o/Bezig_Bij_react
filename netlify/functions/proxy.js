@@ -1,3 +1,6 @@
+// proxy.js
+// pfad: netlify/functions/proxy.js
+
 const axios = require('axios');
 
 exports.handler = async function (event, context) {
@@ -24,6 +27,7 @@ exports.handler = async function (event, context) {
       },
     };
   } catch (error) {
+    console.error(error);
     return {
       statusCode: 500,
       body: 'Error fetching data',
