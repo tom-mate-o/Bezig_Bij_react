@@ -16,7 +16,7 @@ export default function Agenda() {
       contentHeight: 'auto',
 
       events: {
-        url: 'https://thingproxy.freeboard.io/fetch/https://calendar.google.com/calendar/ical/magicnonsense.agenda%40gmail.com/public/basic.ics',
+        url: 'https://calendar.google.com/calendar/ical/magicnonsense.agenda%40gmail.com/public/basic.ics',
         format: 'ics',
       },
     });
