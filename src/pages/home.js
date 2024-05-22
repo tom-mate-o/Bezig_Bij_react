@@ -235,9 +235,9 @@ export default function Home() {
               height="600px"
               width="100%"
             ></iframe>
-            {/* <div className="agenda">
+            <div className="agenda">
               <Agenda />
-            </div> */}
+            </div>
             <p>
               Wil je je inschrijven voor een van de evenementen? Stuur ons een
               bericht via het contactformulier of Whatsapp of bel ons gewoon
