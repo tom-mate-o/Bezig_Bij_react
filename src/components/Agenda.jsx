@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from 'react';
 import { Calendar } from '@fullcalendar/core';
-import iCalendarPlugin from '@fullcalendar/icalendar';
 import listPlugin from '@fullcalendar/list';
 import nlLocale from '@fullcalendar/core/locales/nl';
 
@@ -10,14 +9,14 @@ export default function Agenda() {
   useEffect(() => {
     const calendarEl = calendarRef.current;
     const calendar = new Calendar(calendarEl, {
-      plugins: [listPlugin, iCalendarPlugin],
+      plugins: [listPlugin],
       initialView: 'listWeek',
       locale: nlLocale,
       contentHeight: 'auto',
 
       events: {
-        url: './netlify/functions/proxy?url=https://calendar.google.com/calendar/ical/magicnonsense.agenda%40gmail.com/public/basic.ics',
-        format: 'ics',
+        url: '/.netlify/functions/fetch-events',
+        format: 'json',
       },
     });
 
