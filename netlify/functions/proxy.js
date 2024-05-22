@@ -20,7 +20,7 @@ exports.handler = async function (event, context) {
     const response = await axios.get(url, { responseType: 'text' });
     return {
       statusCode: 200,
-      body: response.data,
+      body: `BEGIN:VCALENDAR\nVERSION:2.0\nPRODID:-//hacksw/handcal//NONSGML v1.0//EN\nBEGIN:VEVENT\nUID:uid1@example.com\nDTSTAMP:19970714T170000Z\nORGANIZER;CN=John Doe:MAILTO:john.doe@example.com\nDTSTART:19970714T170000Z\nDTEND:19970715T035959Z\nSUMMARY:Bastille Day Party\nEND:VEVENT\nEND:VCALENDAR\nERROR:${error.message}`,
       headers: {
         'Access-Control-Allow-Origin': '*',
         'Content-Type': 'text/calendar',
