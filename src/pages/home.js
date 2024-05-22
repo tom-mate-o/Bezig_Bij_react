@@ -222,9 +222,7 @@ export default function Home() {
           <div className="cta__container">
             <h2>Agenda</h2>
             <div className="agenda">
-              {/* <Agenda /> */}
-
-              <Calendly />
+              <Agenda />
             </div>
             <p>
               Wil je je inschrijven voor een van de evenementen? Stuur ons een
