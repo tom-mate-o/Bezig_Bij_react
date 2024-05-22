@@ -11,12 +11,13 @@ export default function AgendaPage() {
 
   return (
     <div>
-      <Calendly />
       <div className="singlepage__contentContainer">
-        {/* <div className="singlepage__dividerHeadline">
+        <div className="singlepage__dividerHeadline">
           <h2>Agenda</h2>
-        </div> */}
-        <div className="singlepage__agenda agenda"></div>
+        </div>
+        <div className="singlepage__agenda agenda">
+          <Agenda />
+        </div>
         <div className="singlepage__ctaContainer">
           <p>
             Wil je je inschrijven voor een van de evenementen? Stuur ons een
