@@ -261,7 +261,9 @@ export default function App() {
               <br />
             </div>
             <div>
-              <p>+00 (0) 000 000 00 00</p>
+              <p>
+                Tel: <a href="tel:0648149616">0648149616</a>
+              </p>
               <a href="mailto:info@magic-nonsense.nl">
                 <p>info@magic-nonsense.nl</p>
               </a>
@@ -303,7 +305,7 @@ export default function App() {
                 </a>
               </p>
               <p className="footer__collumn5__tom">
-                Images by{' '}
+                Icons by{' '}
                 <a
                   href="https://www.flaticon.com/authors/freepik"
                   target="_blank"

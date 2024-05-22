@@ -56,6 +56,16 @@
     }
   }
 
+  &.whatsapp {
+    background-color: var(--whatsapp-button-bg);
+    color: var(--text-color-light);
+    font-family: u.$pfont;
+    height: auto;
+    &:hover {
+      background-color: var(--whatsapp-button-bg-hover);
+    }
+  }
+
   &.secondary {
     padding: u.rem(12);
     background-color: hsla(49, 11%, 30%, 0.2);

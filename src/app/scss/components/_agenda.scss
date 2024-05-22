@@ -35,6 +35,11 @@
     .fc-list-day-cushion {
       background-color: var(--socialcontainer-bg);
       font-weight: 400;
+
+      .fc-list-day-text,
+      .fc-list-day-side-text {
+        color: var(--text-color-light);
+      }
     }
 
     color: var(--text-color-dark);

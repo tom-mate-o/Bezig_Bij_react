@@ -132,6 +132,10 @@ a:active {
   --secondary-button-text-color: hsl(210, 9%, 96%);
   --secondary-button-text-color-hover: hsl(233, 14%, 25%);
   --topnav-link-hover: #f5a65b;
+  --whatsapp-button-bg: #25d366;
+  --whatsapp-button-bg-hover: #1eaa52;
+  --singlepage-link-color: #b15500;
+  --singlepage-link-color-hover: #d89352;
   --link-color: #f5a65b;
   --link-color-hover: #f5a65b;
   --highlight-bg: #6cae75;
@@ -208,6 +212,15 @@ a:active {
 }
 .button.cta:hover {
   background-color: var(--cta-button-bg-hover);
+}
+.button.whatsapp {
+  background-color: var(--whatsapp-button-bg);
+  color: var(--text-color-light);
+  font-family: "Source Sans 3", sans-serif;
+  height: auto;
+}
+.button.whatsapp:hover {
+  background-color: var(--whatsapp-button-bg-hover);
 }
 .button.secondary {
   padding: 0.75rem;
@@ -705,8 +718,9 @@ a:active {
 }
 @media (min-width: 43.75em) {
   .footer__logo {
-    width: 6.25rem;
-    width: clamp(6.25rem, 5.7218309859rem + 2.2535211268vw, 7.75rem);
+    max-width: 13.75rem;
+    width: 11.25rem;
+    width: clamp(11.25rem, 9.0492957746rem + 9.3896713615vw, 17.5rem);
   }
   .footer__logo.horizontal {
     display: none;
@@ -1016,10 +1030,31 @@ a:active {
     padding-inline: 1.875rem;
   }
 }
+.singlepage__contactContainer__wabuttonContainer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-block-start: 1.25rem;
+}
+.singlepage__contactContainer__wabuttonContainer .button {
+  color: var(--text-color-light);
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  justify-content: center;
+}
+.singlepage__contactContainer__wabuttonContainer span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3125rem;
+}
 .singlepage__contactContainer__text {
   width: 100%;
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
   color: var(--text-color-light);
   margin-block-start: 1.25rem;
@@ -1037,14 +1072,21 @@ a:active {
     margin-left: 30px;
   }
 }
+.singlepage__contactContainer__text a,
+.singlepage__contactContainer__text a:visited {
+  color: var(--text-color-light);
+}
+.singlepage__contactContainer__text a:hover {
+  color: var(--text-color-light);
+}
 
 a,
 a:visited {
-  color: white;
+  color: var(--singlepage-link-color);
 }
 
 a:hover {
-  color: gray;
+  color: var(--singlepage-link-color-hover);
 }
 
 .about__profilecontainer {
@@ -1667,6 +1709,10 @@ button:hover {
 .agenda tbody .fc-list-day-cushion {
   background-color: var(--socialcontainer-bg);
   font-weight: 400;
+}
+.agenda tbody .fc-list-day-cushion .fc-list-day-text,
+.agenda tbody .fc-list-day-cushion .fc-list-day-side-text {
+  color: var(--text-color-light);
 }
 .agenda button:hover {
   background-color: var(--fc-button-bg-color-hover) !important;

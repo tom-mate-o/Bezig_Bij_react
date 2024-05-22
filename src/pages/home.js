@@ -14,7 +14,7 @@ import bezig3 from '../img/bezig3.jpg';
 
 import dianaandarno from '../img/dianaandarno.jpg';
 import mninsta from '../img/mninsta.png';
-import { BsFacebook } from 'react-icons/bs';
+import { BsFacebook, BsWhatsapp } from 'react-icons/bs';
 import { BsInstagram } from 'react-icons/bs';
 import { BiSolidQuoteAltLeft } from 'react-icons/bi';
 
@@ -91,7 +91,7 @@ export default function Home() {
                 innerlijke balans.
               </p>
               <button className="highlights__button tealButton">
-                <Link to="/coaching">...meer!</Link>
+                <Link to="/overons">...meer!</Link>
               </button>
             </div>
           </div>
@@ -110,7 +110,7 @@ export default function Home() {
                 non-verbale communicatie en onze innerlijke balans.
               </p>
               <button className="highlights__button tealButton">
-                <Link to="/sekundaerpraevention">...meer!</Link>
+                <Link to="/overons">...meer!</Link>
               </button>
             </div>
           </div>
@@ -131,7 +131,7 @@ export default function Home() {
                 gevoel en sociale verbinding te versterken.
               </p>
               <button className="highlights__button tealButton">
-                <Link to="/wohlbefinden">...meer!</Link>
+                <Link to="/overons">...meer!</Link>
               </button>
             </div>
           </div>
@@ -230,6 +230,16 @@ export default function Home() {
             </p>
             <button className="button cta">
               <Link to="contact">Maak een afspraak</Link>
+            </button>
+            <button className="button whatsapp">
+              <a
+                href="https://wa.me/31648149616?text=Hoi,%20Magic%20Nonsense!"
+                target="_blank"
+              >
+                <span>
+                  <BsWhatsapp /> WhatsApp ons
+                </span>
+              </a>
             </button>
           </div>
         </div>

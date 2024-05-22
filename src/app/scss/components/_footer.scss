@@ -127,11 +127,12 @@
     }
 
     @include u.breakpoint('medium') {
-      width: 6.25rem;
+      max-width: u.rem(220);
+      width: 11.25rem;
       width: clamp(
-        6.25rem,
-        5.721830985915493rem + 2.253521126760563vw,
-        7.75rem
+        11.25rem,
+        9.049295774647888rem + 9.389671361502346vw,
+        17.5rem
       );
       &.horizontal {
         display: none;

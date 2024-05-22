@@ -13,59 +13,55 @@ export default function Privacydisclaimer() {
       <div className="singlepage__contentContainer">
         <div className="singlepage__content">
           <div>
-            <h2>Erklärung zur Informationspflicht</h2>
-            <h3>Datenschutzerklärung</h3>
+            <h2>Verklaring inzake informatieplicht</h2>
+            <h3>Privacyverklaring</h3>
             <p>
-              In folgender Datenschutzerklärung informieren wir Sie über die
-              wichtigsten Aspekte der Datenverarbeitung im Rahmen unserer
-              Webseite. Wir erheben und verarbeiten personenbezogene Daten nur
-              auf Grundlage der gesetzlichen Bestimmungen
-              (Datenschutzgrundverordnung, Telekommunikationsgesetz 2003).
+              In deze privacyverklaring informeren wij u over de belangrijkste
+              aspecten van de gegevensverwerking op onze website. Wij verzamelen
+              en verwerken persoonlijke gegevens uitsluitend op basis van de
+              wettelijke bepalingen (Algemene Verordening Gegevensbescherming,
+              Telecommunicatiewet).
             </p>
             <br />
             <p>
-              Sobald Sie als Benutzer auf unsere Webseite zugreifen oder diese
-              besuchen wird Ihre IP-Adresse, Beginn sowie Beginn und Ende der
-              Sitzung erfasst. Dies ist technisch bedingt und stellt somit ein
-              berechtigtes Interesse iSv Art 6 Abs 1 lit f DSGVO.
+              Zodra u als gebruiker onze website bezoekt of deze opent, wordt uw
+              IP-adres, begin en einde van de sessie geregistreerd. Dit is
+              technisch noodzakelijk en vormt een gerechtvaardigd belang volgens
+              artikel 6, lid 1, onder f) van de AVG.
             </p>
-
             <br />
-            <h3>Kontakt mit uns</h3>
+            <h3>Contact met ons</h3>
             <p>
-              Wenn Sie uns, entweder über unser Kontaktformular auf unserer
-              Webseite, oder per Email kontaktieren, dann werden die von Ihnen
-              an uns übermittelten Daten zwecks Bearbeitung Ihrer Anfrage oder
-              für den Fall von weiteren Anschlussfragen für sechs Monate bei uns
-              gespeichert. Es erfolgt, ohne Ihre Einwilligung, keine Weitergabe
-              Ihrer übermittelten Daten.
+              Als u contact met ons opneemt via ons contactformulier op onze
+              website of via e-mail, worden de door u verstrekte gegevens zes
+              maanden opgeslagen voor de verwerking van uw aanvraag en voor het
+              geval van vervolgvragen. Uw gegevens worden zonder uw toestemming
+              niet doorgegeven.
             </p>
             <br />
             <h3>Google Fonts</h3>
-
             <p>
-              Unsere Website verwendet Schriftarten von „Google Fonts“. Der
-              Dienstanbieter dieser Funktion ist: Google Ireland Limited Gordon
-              House, Barrow Street Dublin 4. Ireland Tel: +353 1 543 1000
+              Onze website maakt gebruik van lettertypen van "Google Fonts". De
+              dienstverlener van deze functie is: Google Ireland Limited, Gordon
+              House, Barrow Street, Dublin 4, Ierland, Tel: +353 1 543 1000.
             </p>
             <br />
             <p>
-              Beim Aufrufen dieser Webseite lädt Ihr Browser Schriftarten und
-              speichert diese in den Cache. Da Sie, als Besucher der Webseite,
-              Daten des Dienstanbieters empfangen kann Google unter Umständen
-              Cookies auf Ihrem Rechner setzen oder analysieren.
+              Bij het openen van deze website laadt uw browser de benodigde
+              lettertypen en slaat deze op in de cache. Omdat u als bezoeker van
+              de website gegevens van de dienstverlener ontvangt, kan Google
+              mogelijk cookies op uw computer plaatsen of analyseren.
             </p>
             <br />
             <p>
-              Die Nutzung von „Google-Fonts“ dient der Optimierung unserer
-              Dienstleistung und der einheitlichen Darstellung von Inhalten.
-              Dies stellt ein berechtigtes Interesse im Sinne von Art. 6 Abs. 1
-              lit. f DSGVO dar.
+              Het gebruik van "Google Fonts" dient de optimalisatie van onze
+              dienstverlening en de uniforme weergave van inhoud. Dit vormt een
+              gerechtvaardigd belang volgens artikel 6, lid 1, onder f) van de
+              AVG.
             </p>
             <br />
             <p>
-              Weitere Informationen zu Google Fonts erhalten Sie unter folgendem
-              Link:
+              Meer informatie over Google Fonts vindt u via de volgende link:
             </p>
             <a href="https://developers.google.com/fonts/faq">
               https://developers.google.com/fonts/faq
@@ -73,82 +69,76 @@ export default function Privacydisclaimer() {
             <br />
             <br />
             <p>
-              Weitere Informationen über den Umgang mit Nutzerdaten von Google
-              können Sie der Datenschutzerklärung entnehmen:
+              Meer informatie over de omgang met gebruikersgegevens door Google
+              vindt u in de privacyverklaring van Google:
             </p>
-            <a href="https://policies.google.com/privacy?hl=de">
-              https://policies.google.com/privacy?hl=de
+            <a href="https://policies.google.com/privacy?hl=nl">
+              https://policies.google.com/privacy?hl=nl
             </a>
             <br />
             <br />
             <p>
-              Google verarbeitet die Daten auch in den USA, hat sich jedoch dem
-              EU-US Privacy-Shield unterworfen.
+              Google verwerkt de gegevens ook in de VS, maar heeft zich
+              aangesloten bij het EU-VS Privacy Shield.
             </p>
             <a href="https://www.privacyshield.gov/EU-US-Framework">
               https://www.privacyshield.gov/EU-US-Framework
             </a>
             <br />
             <br />
-            <h3>Ihre Rechte als Betroffener</h3>
+            <h3>Uw rechten als betrokkene</h3>
             <p>
-              Sie als Betroffener haben bezüglich Ihrer Daten, welche bei uns
-              gespeichert sind grundsätzlich ein Recht auf:
+              Als betrokkene hebt u met betrekking tot uw gegevens die bij ons
+              zijn opgeslagen in principe recht op:
             </p>
             <ul>
-              {' '}
-              <li>Auskunft</li>
-              <li> Löschung der Daten</li>
-              <li> Berichtigung der Daten</li>
-              <li> Übertragbarkeit der Daten</li>
-              <li> Wiederruf und Widerspruch zur Datenverarbeitung</li>
-              <li> Einschränkung</li>
+              <li>Inzage</li>
+              <li>Verwijdering van de gegevens</li>
+              <li>Correctie van de gegevens</li>
+              <li>Overdraagbaarheid van de gegevens</li>
+              <li>Intrekking en bezwaar tegen de gegevensverwerking</li>
+              <li>Beperking van de verwerking</li>
             </ul>
+            <p>
+              Als u vermoedt dat er in de verwerking van uw gegevens inbreuk
+              wordt gemaakt op de privacywetgeving, heeft u de mogelijkheid om
+              bij ons (info@magic-nonsense.nl) of bij de Autoriteit
+              Persoonsgegevens een klacht in te dienen. U kunt ons bereiken via
+              de volgende contactgegevens: Websitebeheerder: Diana Asmuss,
+              E-mail: info@magic-nonsense.nl
+            </p>
+            <br />
+            <p>
+              Source: <a href="https://fairesRecht.at">fairesRecht.at</a>
+            </p>
 
-            <p>
-              Wenn sie vermuten, dass im Zuge der Verarbeitung Ihrer Daten
-              Verstöße gegen das Datenschutzrecht passiert sind, so haben Sie
-              die Möglichkeit sich bei uns (mail@tomkra.dev) oder der
-              Datenschutzbehörde zu beschweren. Sie erreichen uns unter
-              folgenden Kontaktdaten: Webseitenbetreiber: Thomas Kranawetter
-              Email: mail@tomkra.dev
-            </p>
-            <br />
-            <p>
-              Quelle:{' '}
-              <a href="https://fairesRecht.at">
-                Rechtsanwalt finden - fairesRecht
-              </a>
-            </p>
-          </div>
-          <div>
-            <h2 className="singlepage__dividerSubHeadline">Disclaimer</h2>
-            <p>
-              Trotz sorgfältiger inhaltlicher Kontrolle übernimmt der
-              Webseitenbetreiber (von www.tomkra.dev, Thomas Kranawetter) keine
-              Haftung für die Inhalte externer Links. Für den Inhalt der
-              verlinkten Seiten sind ausschließlich deren Betreiber
-              verantwortlich. Sollten Sie dennoch auf ausgehende Links
-              aufmerksam werden, welche auf eine Webseite mit rechtswidriger
-              Tätigkeit/Information verweisen, ersuchen wir um dementsprechenden
-              Hinweis (mail@tomkra.dev), um diesen nach § 17 Abs. 2 ECG umgehend
-              zu entfernen.
-            </p>
-            <p>
-              Die Urheberrechte Dritter werden vom Betreiber mit bestmöglicher
-              Sorgfalt beachtet. Sollten Sie trotzdem auf eine
-              Urheberrechtsverletzung aufmerksam werden, bitten wir um einen
-              entsprechenden Hinweis an (mail@tomkra.dev). Bei Bekanntwerden
-              derartiger Rechtsverletzungen werden wir den betroffenen Inhalt
-              umgehend entfernen.
-            </p>
-            <br />
-            <p>
-              Quelle:{' '}
-              <a href="https://fairesRecht.at">
-                Rechtsanwalt finden - fairesRecht
-              </a>
-            </p>
+            <div>
+              <h2 class="singlepage__dividerSubHeadline">Disclaimer</h2>
+              <p>
+                Ondanks zorgvuldige inhoudelijke controle aanvaardt de
+                websitebeheerder (www.magic-nonsense.nl, Diana Asmuss) geen
+                aansprakelijkheid voor de inhoud van externe links. Voor de
+                inhoud van de gelinkte pagina's zijn uitsluitend de beheerders
+                van die pagina's verantwoordelijk. Mocht u op uitgaande links
+                stuiten die naar een website met onwettige activiteit/informatie
+                leiden, dan verzoeken wij u om ons hiervan op de hoogte te
+                stellen (info@magic-nonsense.nl), zodat wij deze volgens artikel
+                17, lid 2 van de Wet op de Elektronische Communicatie
+                onmiddellijk kunnen verwijderen.
+              </p>
+              <p>
+                De auteursrechten van derden worden door de beheerder met de
+                grootst mogelijke zorgvuldigheid gerespecteerd. Mocht u
+                desondanks een inbreuk op het auteursrecht opmerken, verzoeken
+                wij u om een melding te sturen naar (info@magic-nonsense.nl).
+                Bij kennisneming van dergelijke inbreuken zullen wij de
+                betreffende inhoud onmiddellijk verwijderen.
+              </p>
+              <br />
+              <p>
+                Source: <a href="https://fairesRecht.at">fairesRecht.at</a>
+              </p>
+            </div>
           </div>
         </div>
       </div>

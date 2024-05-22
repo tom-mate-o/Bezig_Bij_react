@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import { Icon } from 'leaflet';
+import { BsWhatsapp } from 'react-icons/bs';
 import 'leaflet/dist/leaflet.css';
 
 export default function Contact() {
@@ -37,7 +38,7 @@ export default function Contact() {
             <MapContainer
               center={position}
               zoom={13}
-              style={{ height: '300px', width: '100%' }}
+              style={{ height: '333px', width: '100%' }}
             >
               <TileLayer
                 attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -56,7 +57,12 @@ export default function Contact() {
               <tbody>
                 <tr>
                   <td>Mail</td>
-                  <td>info@magic-nonsense.nl</td>
+                  <td>
+                    {' '}
+                    <a href="mailto:info@magic-nonsense.nl">
+                      info@magic-nonsense.nl
+                    </a>
+                  </td>
                 </tr>
                 <tr>
                   <td>
@@ -64,7 +70,9 @@ export default function Contact() {
                     <br />
                     WhatsApp
                   </td>
-                  <td>0000 / 00000000</td>
+                  <td>
+                    <a href="tel:0648149616">0648149616</a>
+                  </td>
                 </tr>
                 <tr>
                   <td>Adres</td>
@@ -77,6 +85,17 @@ export default function Contact() {
                 </tr>
               </tbody>
             </table>
+            <div className="singlepage__contactContainer__wabuttonContainer">
+              <a
+                href="https://wa.me/31648149616?text=Hoi,%20Magic%20Nonsense!"
+                target="_blank"
+                className="button whatsapp"
+              >
+                <span>
+                  <BsWhatsapp /> WhatsApp ons
+                </span>
+              </a>
+            </div>
           </div>
         </div>
 
