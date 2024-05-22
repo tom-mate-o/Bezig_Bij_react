@@ -2,6 +2,11 @@
 
 .singlepage {
   &__contentContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: var(--sp-bg);
     padding: u.rem(20);
 
@@ -18,15 +23,17 @@
     p {
       font-family: u.$pfont;
       color: var(--content-text-color-dark);
+      text-align: justify;
     }
   }
 
   &__dividerHeadline {
+    width: 100%;
     text-align: center;
     padding-block: u.rem(10);
     background-color: var(--dividerheadline-bg);
     color: var(--content-text-color-light);
-    margin-block-end: u.rem(30);
+    margin-block-end: u.rem(20);
     text-transform: uppercase;
 
     h2 {
@@ -35,11 +42,13 @@
   }
 
   &__dividerSubHeadline {
+    width: 100%;
     text-align: center;
     padding-block: u.rem(2);
     background-color: var(--dividersubheadline-bg);
-    color: var(--content-text-color-dark);
-    margin-block-end: u.rem(30);
+    color: var(--content-text-color-light);
+    margin-block-start: u.rem(30);
+    margin-block-end: u.rem(20);
 
     h2 {
       font-weight: 400;
@@ -47,6 +56,70 @@
 
     @include u.breakpoint('medium') {
       margin-block-start: u.rem(30);
+    }
+  }
+
+  &__pictureContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include u.breakpoint('medium') {
+      min-width: 300px;
+      max-width: 300px;
+    }
+
+    @include u.breakpoint('large') {
+      min-width: 500px;
+      max-width: 500px;
+    }
+  }
+
+  &__textandpictureContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    gap: u.rem(20);
+    max-width: 1000px;
+
+    &.wij {
+      align-items: center;
+    }
+
+    &.reverse {
+      @include u.breakpoint('medium') {
+        flex-direction: row-reverse;
+      }
+    }
+
+    @include u.breakpoint('medium') {
+      flex-direction: row;
+      gap: u.rem(30);
+    }
+
+    img {
+      @include u.breakpoint('medium') {
+        max-height: u.rem(300);
+        object-fit: cover;
+      }
+    }
+  }
+
+  &__picture {
+    &__avatar {
+      border-radius: 50%;
+      width: 12.5rem;
+      width: clamp(
+        12.5rem,
+        10.855263157894736rem + 8.771929824561402vw,
+        18.75rem
+      );
+
+      @include u.breakpoint('medium') {
+        min-width: 300px;
+        max-width: 300px;
+      }
     }
   }
 
@@ -62,34 +135,15 @@
     h2 {
       color: var(--content-text-color-dark);
     }
-  }
 
-  &__filterContainer {
-    background-color: var(--main-bg);
-    padding: u.rem(10);
-    margin-block-start: u.rem(20);
+    &__formular {
+      margin-block-start: u.rem(30);
+      width: 100%;
 
-    &__title {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: flex-start;
-      text-align: center;
-      gap: u.rem(5);
-      color: var(--content-text-color-dark);
-      margin-block-end: u.rem(10);
-      line-height: 1;
-      font-weight: 700;
+      @include u.breakpoint('large') {
+        width: 80%;
+      }
     }
-  }
-
-  &__filterbuttonsContainer {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: u.rem(10);
   }
 
   &__ctaContainer {
@@ -107,99 +161,8 @@
     }
   }
 
-  &__skillcontainer {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto u.rem(20);
-    margin-block-end: u.rem(10);
-
-    &__introtext {
-      margin-block-end: 30px;
-    }
-
-    @include u.breakpoint('medium') {
-      grid-template-columns: 1fr 2fr;
-      grid-template-rows: auto;
-      margin-block-end: u.rem(20);
-    }
-
-    &__skillbadge {
-      height: auto;
-      width: u.rem(100);
-      transition: all 0.3s ease-in-out;
-
-      &:hover {
-        transform: scale(1.1);
-      }
-    }
-
-    &__image {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    &__text {
-      text-align: center;
-
-      h2 {
-        margin-block-end: u.rem(5);
-      }
-
-      @include u.breakpoint('medium') {
-        text-align: justify;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-      }
-    }
-  }
-
-  &__furtherSkillsContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: u.rem(30);
-    flex-wrap: wrap;
-    margin-block-end: u.rem(30);
-
-    &__skill {
-      max-width: 100px;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: center;
-      text-align: center;
-
-      p {
-        font-weight: 400;
-      }
-    }
-
-    &__skillbadge {
-      height: auto;
-      width: u.rem(80);
-      margin-block-end: u.rem(10);
-      filter: sepia(100%);
-      transition: all 0.3s ease-in-out;
-
-      &:hover {
-        transform: scale(1.1);
-      }
-    }
-
-    &__iconCredit {
-      text-align: center;
-      font-size: u.rem(10);
-      margin-block-start: u.rem(30);
-
-      a {
-        color: grey;
-      }
-    }
-  }
-
   &__contactContainer {
+    width: 100%;
     background-color: var(--dark-bg);
     display: grid;
     padding-block: u.rem(20);

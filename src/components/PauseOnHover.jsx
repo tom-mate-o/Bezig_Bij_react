@@ -2,15 +2,6 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import air from '../../src/img/air.png';
-import apnoe from '../../src/img/apnoe.png';
-import aroma from '../../src/img/aroma.png';
-import fitness from '../../src/img/fitness.png';
-import forest from '../../src/img/forest.png';
-import ice from '../../src/img/ice.png';
-import mindful from '../../src/img/mindful.png';
-import yogamat from '../../src/img/yoga-mat.png';
-
 import boundaries from '../../src/img/boundaries.png';
 import calm from '../../src/img/calm.png';
 import connection from '../../src/img/connection.png';

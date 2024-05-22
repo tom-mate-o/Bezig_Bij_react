@@ -45,6 +45,7 @@
   }
 
   &.cta {
+    width: 100%;
     background-color: var(--cta-button-bg);
     color: var(--text-color-dark);
 
@@ -63,6 +64,22 @@
     height: auto;
     &:hover {
       background-color: var(--whatsapp-button-bg-hover);
+    }
+
+    &.button {
+      width: 100%;
+      padding-inline: u.rem(7);
+      a {
+        width: 100%;
+      }
+
+      span {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: u.rem(5);
+      }
     }
   }
 

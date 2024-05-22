@@ -99,7 +99,7 @@ export default function Contact() {
           </div>
         </div>
 
-        <div className="singlepage__content">
+        <div className="singlepage__content__formular">
           <div className="container">
             <h3 className="">Schrijf ons een berichtje</h3>
             <form
