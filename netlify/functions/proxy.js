@@ -27,7 +27,7 @@ exports.handler = async function (event, context) {
       },
     };
   } catch (error) {
-    console.error(error);
+    console.error(error.message);
     return {
       statusCode: 500,
       body: 'Error fetching data',
