@@ -841,6 +841,7 @@ a:active {
   }
 }
 .singlepage__contentContainer p {
+  font-family: "Source Sans 3", sans-serif;
   color: var(--content-text-color-dark);
 }
 .singlepage__dividerHeadline {

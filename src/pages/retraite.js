@@ -12,7 +12,11 @@ export default function Retraite() {
         <div className="singlepage__dividerHeadline">
           <h2>Retraite</h2>
         </div>
-        <p>coming soon</p>
+        <p>
+          Ook organiseren wij retraite dagen met verschillende thema’s. Hierbij
+          staan terug gaan naar jezelf en verbinding met de natuur als basis
+          uitgangspunt.
+        </p>
       </div>
     </div>
   );
