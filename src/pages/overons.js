@@ -27,8 +27,9 @@ export default function OverOns() {
           </div>
           <p>
             <h3>
-              Ik ben <b>Diana Asmuss</b> en samen met <b>Arno Wildschut</b> werk
-              ik bij Magic & Nonsense.
+              Ik ben <b style={{ whiteSpace: 'nowrap' }}>Diana Asmuss</b> en
+              samen met <b style={{ whiteSpace: 'nowrap' }}>Arno Wildschut</b>{' '}
+              werk ik bij Magic & Nonsense.
             </h3>
             Wij leren mensen bewust kijken naar zichzelf en gebruik maken van
             gevoel, energie en intuïtie. Op ons mooie perceel grond werken we

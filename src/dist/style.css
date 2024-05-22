@@ -935,6 +935,9 @@ a:active {
 .singlepage__textandpictureContainer.wij {
   align-items: center;
 }
+.singlepage__textandpictureContainer.wij h3 {
+  text-align: left;
+}
 @media (min-width: 43.75em) {
   .singlepage__textandpictureContainer.reverse {
     flex-direction: row-reverse;
