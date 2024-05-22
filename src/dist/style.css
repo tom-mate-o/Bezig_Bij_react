@@ -267,7 +267,7 @@ a:active {
   padding-block-start: 1.25rem;
   min-height: 100vh;
   position: relative;
-  padding-bottom: 52rem; /* Höhe des Footers */
+  padding-bottom: 53.625rem; /* Höhe des Footers */
   box-sizing: border-box;
 }
 @media (max-width: 43.74875em) {
@@ -594,7 +594,7 @@ a:active {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 52rem;
+  height: 53.625rem;
   padding-inline: 1.25rem;
   padding-block-start: 1.25rem;
   color: var(--content-text-color-light);

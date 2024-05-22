@@ -292,19 +292,30 @@ export default function App() {
                 {`©${new Date().getFullYear()}`} Magic & Nonsense
               </p>
               <p className="footer__collumn5__tom">
-                Icons by{' '}
+                Images by{' '}
                 <a
-                  href="https://www.flaticon.com/authors/juicy-fish/sketchy?author_id=313&type=standard"
+                  href="https://www.freepik.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{ whiteSpace: 'nowrap' }}
                 >
-                  Flaticon (juicy_fish)
+                  Freepik.com
+                </a>
+              </p>
+              <p className="footer__collumn5__tom">
+                Images by{' '}
+                <a
+                  href="https://www.flaticon.com/authors/freepik"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ whiteSpace: 'nowrap' }}
+                >
+                  Flaticon.com (Freepik)
                 </a>
               </p>
             </div>
             <p className="footer__collumn5__tom">
-              Made with 💙 by{' '}
+              Made with 🧡 by{' '}
               <a
                 href="https://tomkra.dev"
                 target="_blank"
