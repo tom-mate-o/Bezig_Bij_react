@@ -18,6 +18,9 @@ export default function Agenda() {
       events: {
         googleCalendarId: 'magicnonsense.agenda@gmail.com',
       },
+      eventClick: function (info) {
+        info.jsEvent.preventDefault();
+      },
     });
 
     calendar.render();
