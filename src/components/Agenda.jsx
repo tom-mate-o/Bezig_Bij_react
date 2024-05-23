@@ -14,7 +14,7 @@ export default function Agenda() {
       initialView: 'listWeek',
       locale: nlLocale,
       contentHeight: 'auto',
-      googleCalendarApiKey: 'AIzaSyCrpa0pSkAVwAYfQtp0bW80o7HLO--wg80',
+      googleCalendarApiKey: process.env.REACT_APP_GOOGLE_CALENDAR_API_KEY,
       events: {
         googleCalendarId: 'magicnonsense.agenda@gmail.com',
       },
