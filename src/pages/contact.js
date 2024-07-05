@@ -52,7 +52,7 @@ export default function Contact() {
           <div className="singlepage__contactContainer__text">
             <table>
               <h3>
-                Diana Asmuss <br />& Arno Wildschu
+                Diana Asmuss <br />& Arno Wildschut
               </h3>
               <tbody>
                 <tr>

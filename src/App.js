@@ -12,7 +12,7 @@ import Home from './pages/home';
 import OverOns from './pages/overons';
 import OnzeVisie from './pages/onzevisie';
 import Workshops from './pages/workshops';
-import Retraite from './pages/retraite';
+import Retraites from './pages/retraites';
 import Apnoetauchen from './pages/apnoetauchen';
 import Preise from './pages/preise';
 import Contact from './pages/contact';
@@ -77,7 +77,7 @@ export default function App() {
                 </li>
                 <li className="topnav__item">
                   <Link to="/overons" className="topnav__link">
-                    overn ons
+                    over ons
                   </Link>
                 </li>
                 <li className="topnav__item">
@@ -91,8 +91,8 @@ export default function App() {
                   </Link>
                 </li>
                 <li className="topnav__item">
-                  <Link to="/retraite" className="topnav__link">
-                    retraite
+                  <Link to="/retraites" className="topnav__link">
+                    retraites
                   </Link>
                 </li>
 
@@ -128,7 +128,7 @@ export default function App() {
               </li>
               <li className="mobilenav__item" onClick={handleCloseClick}>
                 <Link to="/overons" className="mobilenav__link">
-                  overn ons
+                  over ons
                 </Link>
               </li>
               <li className="mobilenav__item" onClick={handleCloseClick}>
@@ -143,8 +143,8 @@ export default function App() {
               </li>
 
               <li className="mobilenav__item" onClick={handleCloseClick}>
-                <Link to="/retraite" className="mobilenav__link">
-                  Retraite
+                <Link to="/retraites" className="mobilenav__link">
+                  Retraites
                 </Link>
               </li>
 
@@ -169,7 +169,7 @@ export default function App() {
           <Route path="/overons" element={<OverOns />} />
           <Route path="/onzevisie" element={<OnzeVisie />} />
           <Route path="/workshops" element={<Workshops />} />
-          <Route path="/retraite" element={<Retraite />} />
+          <Route path="/retraites" element={<Retraites />} />
           <Route path="/apnoetauchen" element={<Apnoetauchen />} />
           <Route path="/preise" element={<Preise />} />
           <Route path="/contact" element={<Contact />} />
@@ -202,8 +202,8 @@ export default function App() {
                 </Link>
               </li>
               <li>
-                <Link to="/retraite" className="footer__link">
-                  retraite
+                <Link to="/retraites" className="footer__link">
+                  retraites
                 </Link>
               </li>
               <li>
@@ -253,7 +253,7 @@ export default function App() {
             <div>
               <p>
                 Diana Asmuss
-                <br />& Arno Wildschu
+                <br />& Arno Wildschut
               </p>
               <p> Veensteeg 3</p>
               <p>3972 MH</p>
@@ -291,7 +291,7 @@ export default function App() {
               </Link>
               <LogoVertical className="footer__logo vertical" />
               <p className="footer__collumn5__copyright">
-                {`©${new Date().getFullYear()}`} Magic & Nonsense
+                {`©${new Date().getFullYear()}`} Bezig Bij
               </p>
               <p className="footer__collumn5__tom">
                 Images by{' '}
